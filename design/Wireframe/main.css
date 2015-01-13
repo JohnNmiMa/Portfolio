@@ -1,0 +1,28 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	color: #333333;
+}
+
+header {
+	border-bottom:1px solid #bbb;
+	margin:20px;
+}
+
+header h2 {
+	margin-bottom:10px;
+}
+
+span.wf1 {
+	color:red;
+	cursor: pointer;
+}
+
+span.wf2 {
+	color:blue;
+	cursor: pointer;
+}
+
+#markupBox {
+	margin:0 0 10px 15px;
+}

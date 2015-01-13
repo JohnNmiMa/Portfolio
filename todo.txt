@@ -1,0 +1,18 @@
+Create Wireframe - DONE
+Create initial framework - DONE
+Understand how to display images in a grid - DONE
+- Valentine's Day Card - http://jettagozoom.github.io/ValentinesDayCard - P
+- Pam's Doterra - http://pamsdoterra.herokuapp.com
+Add ANG section - DONE
+- SomeCode - http://somecode.pythonanywhere.com - P
+  Instagram Searcher - http://jettagozoom.github.io/PhotoBrowser - P
+  Countries-N-Capitals - http://jettagozoom.github.io/CountriesCapitals/app - P
+  WaitStaff Calculator - http://jettagozoom.github.io/WaitstaffCalculatorWithRoutes/app - P
+  CalendarDirective - http://jettagozoom.github.io/CalendarDirectiveChallenge/app/ - P
+  CodeMirror textarea - http://jettagozoom.github.io/AngularCodeMirrorTextarea/app/ - P
+  ngMadLibs - http://jettagozoom.github.io/ngMadLibs/ - P
+Add PIP section - DONE
+Work on Experience (Experience & Academics) - DONE
+  * Create chart showing experience over time
+Work on Skills
+

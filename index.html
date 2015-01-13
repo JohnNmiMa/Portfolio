@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="JohnMarksPortfolio" ng-strict-di>
+	<head>
+		<title>John Marks</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<!-- build:css ./../static/combined.css -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli">
+		<link type="text/css" rel="stylesheet" href="reset.css">
+		<link type="text/css" rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css">
+		<link type="text/css" rel="stylesheet" href="assets/css/main.css">
+		<!-- endbuild -->
+	</head>
+	<body>
+		<header>
+			<div class="top">
+				<ul>
+					<li class="linkedinButton"><a href="http://www.linkedin.com/in/johnmarksjr" target="_blank">
+						<i class="fa fa-linkedin"></i></a></li>
+					<li class="githubButton"><a href="https://github.com/jettagozoom" target="_blank">
+						<i class="fa fa-github"></i></a></li>
+					<li class="gplusButton"><a href="http://plus.google.com/106697488228998596996" target="_blank">
+						<i class="fa fa-google-plus"></i></a></li>
+					<li class="mailButton"><a href="mailto:johnmarksjr@gmail.com" target="_blank">
+						<i class="fa fa-envelope"></i></a></li>
+				</ul>
+			</div>
+			<section class="container">
+				<div class="navigator">
+					<a class="name" href="#/work">John<span>Marks</span></a>
+					<ul class="menu" >
+						<li id="workbtn"><a href="#/work">Work</a></li>
+						<li id="expbtn"><a href="#/experience">Experience</a></li>
+						<li id="skillsbtn"><a href="#/skills">Skills</a></li>
+					</ul>
+				</div>
+			</section>
+		</header>
+
+		<div ng-view></div>
+
+		<!-- build:js ./../static/combined.js -->
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+		<!--<script type="text/javascript" src="assets/js/application.js"></script>-->
+		<script type="text/javascript" src="assets/js/utils.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+		<script type="text/javascript" src="assets/js/angapp.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>

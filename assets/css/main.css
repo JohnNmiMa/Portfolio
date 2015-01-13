@@ -1,0 +1,355 @@
+body {
+	font-family: 'AvenirNext-Regular', Helvetica, sans-serif;
+}
+
+header {
+	font-size: 1.6rem;
+	/*margin-bottom:40px;*/
+}
+
+	.top {
+		height: 40px;
+	}
+		.top ul {
+			float:right;
+			padding-top:10px;
+		}
+		.top ul li {
+			display:inline-block;
+			width:30px;
+			height:30px;
+			line-height: 35px;
+			text-transform: uppercase;
+			font-size: 62.5%;
+			text-align:center;
+		}
+		.top ul li a {
+			text-decoration: none;
+			color:#444;
+		}
+		.top ul li a i {
+			font-size:1.4em;
+			opacity: 0.3;
+		}
+		.top ul li a i:hover {
+			font-size:1.6em;
+			opacity: 1;
+			color:#41b7d8;
+		}
+
+		.top ul li.mailButton {
+			margin-right:30px;
+		}
+
+
+	.container {
+		/*min-width:430px;*/
+		height:100%;
+	}
+	@media screen and (min-width: 0px) {
+		.container {
+			margin:0 auto 2% auto;
+			max-width:600px;
+		}
+	}
+	@media screen and (min-width: 600px) {
+		.container {
+			margin:0 5% 2% 5%;
+			max-width:100%;
+		}
+	}
+
+		.navigator {
+			color:#444;
+			height:100%;
+			/*overflow: visible;*/
+			border-bottom: 0;
+		}
+			.name {
+				font-family: 'AvenirNext-UltraLight', Helvetica, sans-serif;
+				font-size: 1.2em;
+				text-transform: uppercase;
+				text-decoration: none;
+				color:inherit;
+			}
+			.name:hover {
+				color:#41b7d8;
+			}
+				.name span {
+					font-family: 'AvenirNext-DemiBold', Helvetica, sans-serif;
+				}
+
+			ul.menu {
+				text-transform: uppercase;
+			}
+				ul.menu li {
+					line-height:35px;
+				}
+				ul.menu li#workbtn {
+					padding-right:6px;
+				}
+				ul.menu li#expbtn {
+					padding:0 6px;
+				}
+				ul.menu li#skillsbtn {
+					padding-left:6px;
+				}
+					ul.menu li a {
+						color:inherit;
+						text-decoration: none;
+					}
+					ul.menu li a:hover {
+						color:#41b7d8;
+					}
+
+		@media screen and (min-width: 0px) {
+			.navigator {
+				margin: 45px 0 25px 0;
+				text-align:center;
+			}
+				.name {
+					/*vertical-align:middle;*/
+				}
+
+				ul.menu {
+					/*display:block;*/
+					position:relative;
+					font-size:0.55em;
+					font-weight:700;
+				}
+					ul.menu li {
+						display:inline-block;
+						line-height:35px;
+						vertical-align:middle;
+					}
+		}
+		@media screen and (min-width: 600px) {
+			.navigator {
+				/*margin: 45px 0 25px 0;*/
+				position:relative;
+				text-align:left;
+			}
+				.name {
+					/*vertical-align:middle;*/
+				}
+
+				ul.menu {
+					/*display:inline-block;*/
+					/*position:absolute;*/
+					/*right:0;*/
+					float:right;
+					font-size:0.55em;
+					font-weight:700;
+				}
+					ul.menu li {
+						display:inline-block;
+						line-height:35px;
+						vertical-align:middle;
+					}
+		}
+
+	#work.content {
+	}
+
+		#work.content .title {
+			padding: 10px 15px 10px 23px;
+			border-left: 7px solid #eee;
+			margin: 0 0 30px -30px;
+		}
+		#work.content .title.thinkful {
+			font-size:1.5em;
+			color:#444;
+		}
+		#work.content .title.thinkful img {
+			width:130px;
+		}
+		#work.content .title.hp {
+			vertical-align:middle;
+			font-size:1.3em;
+			color:#777;
+		}
+		#work.content .title.hp img {
+			width:30px;
+		}
+		#work.content .title.seismic {
+			font-size:1.1em;
+			color:#aaa;
+		}
+		#work.content .title.seismic img {
+			width:40px;
+		}
+			#work.content .title h4 {
+				font-size:.7em;
+				font-weight:300;
+				color:#999;
+			}
+
+		section .grid {
+			overflow:hidden;
+			margin-bottom:60px;
+		}
+
+		section .grid .proj {
+			position:relative;
+			float:left;
+			overflow:hidden;
+		}
+		section .grid .proj:hover {
+			/*transition: height .3 ease in;*/
+		}
+		@media screen and (min-width: 0px) {
+			.proj {
+				width:100%;
+			}
+		}
+		@media screen and (min-width: 600px) {
+			.proj {
+				width:50%;
+				width:48%;
+				border:5px solid #fff;
+			}
+		}
+		@media screen and (min-width: 900px) {
+			.proj {
+				width:33.33332%;
+				width:32%;
+				border:5px solid #fff;
+			}
+		}
+		@media screen and (min-width: 1200px) {
+			.proj {
+				width:25%;
+				width:24%;
+				border:5px solid #fff;
+			}
+		}
+
+		section .grid .proj .imgContainer {
+			position:relative;
+			z-index:3;
+			/*Man, I struggled with this. Adding the padding makes it all work!*/
+			padding-bottom: 100%;
+		}
+            section .grid #somecode .imgContainer .image {
+                background-image: url('images/somecode.png');
+            }
+            section .grid #photobrowser .imgContainer .image {
+                background-image: url('images/photobrowser.png');
+            }
+            section .grid #countriescapitals .imgContainer .image {
+                background-image: url('images/countriescapitals.png');
+            }
+            section .grid #waitstaffcalc .imgContainer .image {
+                background-image: url('images/waitstaffcalc.png');
+            }
+            section .grid #calendardirective .imgContainer .image {
+                background-image: url('images/calendardirective.png');
+            }
+            section .grid #codemirrortextarea .imgContainer .image {
+                background-image: url('images/codemirrortextarea.png');
+            }
+            section .grid #ngmadlibs .imgContainer .image {
+                background-image: url('images/ngmadlibs.png');
+            }
+			section .grid #stockportfolio .imgContainer .image {
+				background-image: url('images/stockportfolio.png');
+			}
+			section .grid #quizalator .imgContainer .image {
+				background-image: url('images/quizalator.png');
+			}
+			section .grid #valentine .imgContainer .image {
+				background-image: url('images/valentine.png');
+			}
+            section .grid #pamsdoterra .imgContainer .image {
+                background-image: url('images/pamsdoterra.png');
+            }
+			section .grid #hotorcold .imgContainer .image {
+				background-image: url('images/hotorcold.png');
+			}
+			section .grid #tssignals .imgContainer .image {
+				background-image: url('images/37signalsclone.png');
+			}
+			section .grid #googleclone .imgContainer .image {
+				background-image: url('images/googleclone.png');
+			}
+			section .grid #rgs .imgContainer .image {
+				background-image: url('images/rgs.png');
+			}
+			section .grid #webos .imgContainer .image {
+				background-image: url('images/hpwebos.jpg');
+			}
+			section .grid #graphicsdevice .imgContainer .image {
+				background-image: url('images/visualizegraphics.jpg');
+			}
+			section .grid #spacer1 { display:none; }
+			@media screen and (min-width: 900px) {
+				section .grid #spacer1 { display:block; }
+			}
+			@media screen and (min-width: 1200px) {
+				section .grid #spacer1 { display:none; }
+			}
+			section .grid #x11 .imgContainer .image {
+				background-image: url('images/hpux-x11.png');
+			}
+			section .grid #seismicprocessing .imgContainer .image {
+				background-image: url('images/seismicdata.jpg');
+			}
+			section .grid #seismicacquisition .imgContainer .image {
+				background-image: url('images/seismicacquisition.jpg');
+			}
+			section .grid .proj .image {
+				position:absolute;
+				/* Man, discovering how to remove the border around the background
+				 * images was tough. The following two lines did the trick */
+				top:-1%;
+				left:-1%;
+				background-repeat: no-repeat;
+				background-size: cover;
+				/* You also have to make the image slightly larger to
+				 * remove the right and bottom image border. */
+				width:102%;
+				height:102%;
+				-webkit-transition-property: background-position background-size;
+				-webkit-transition-duration: 0.25s;
+				-webkit-transition-timing-function: ease-out;
+			}
+
+		/* This is the overlay that lies on top of the image. By default it is shown as 
+		 * hidden, and becomes visible when hovered over.*/
+		section .grid .proj a.overlay {
+			position:absolute;
+			z-index:5;
+			text-decoration: none;
+			visibility:hidden;
+			background-color: rgba(0,0,0, 0);
+			-webkit-transition: background-color 0.2s ease-out;
+		}
+
+			section .grid .proj a.overlay .description {
+				vertical-align:middle;
+				text-align:center;
+			}
+			
+				section .grid .proj a.overlay .description h2 {
+					font-size:0.9em;
+					line-height:30px;
+					color:#fff;
+					-webkit-transition: font-size 0.2s ease-out;
+				}
+				section .grid .proj a.overlay .description h4 {
+					font-size:0,9em;
+					font-weight:300;
+					line-height:24px;
+					color:#ccc;
+					-webkit-transition: font-size 0.2s ease-out;
+				}
+
+	#experience.content #experienceimage {
+		width:100%;
+	}
+
+/* Used to style the jQuery tooptip */
+.ui-tooltip {
+	font-size: 9px;
+}
+
