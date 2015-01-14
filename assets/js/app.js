@@ -21,61 +21,69 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
 
 .controller('WorkCtrl', ['$scope', function($scope) {
     $scope.angularProjects = [
-        { id: "somecode",
-          href: "http://somecode.pythonanywhere.com/",
-          title: "SomeCode<br/>Snippet Tool",
-          orientation: "wide",
-          indata:  {xoff: 30, yoff: 0, zoom:130},
-          outdata: {xoff:  0, yoff: 0, zoom:100}
+        {   id: "somecode",
+            href: "http://somecode.pythonanywhere.com/",
+            title: "SomeCode<br/>Snippet Tool",
+            orientation: "wide",
+            hostenv: "Website",
+            indata:  {xoff: 30, yoff: 0, zoom:130},
+            outdata: {xoff:  0, yoff: 0, zoom:100}
         },
-        { id: "photobrowser",
-          href: "http://jettagozoom.github.io/PhotoBrowser",
-          title: "Instagram Searcher",
-          orientation: "wide",
-          indata:  {xoff: 50, yoff: 95, zoom:140},
-          outdata: {xoff:  0, yoff:  0, zoom:100}
+        {   id: "photobrowser",
+            href: "http://jettagozoom.github.io/PhotoBrowser",
+            title: "Instagram Searcher",
+            orientation: "wide",
+            hostenv: "GitHub Pages",
+            indata:  {xoff: 50, yoff: 95, zoom:140},
+            outdata: {xoff:  0, yoff:  0, zoom:100}
         },
-        { id: "countriescapitals",
-          href: "http://jettagozoom.github.io/CountriesCapitals/app",
-          title: "Countries-N-Capitals",
-          orientation: "wide",
-          indata:  {xoff: 90, yoff: 35, zoom:125},
-          outdata: {xoff:  0, yoff:  0, zoom:125}
+        {   id: "countriescapitals",
+            href: "http://jettagozoom.github.io/CountriesCapitals/app",
+            title: "Countries-N-Capitals",
+            orientation: "wide",
+            hostenv: "GitHub Pages",
+            indata:  {xoff: 90, yoff: 35, zoom:125},
+            outdata: {xoff:  0, yoff:  0, zoom:125}
         },
-        { id: "waitstaffcalc",
-          href: "http://jettagozoom.github.io/WaitstaffCalculatorWithRoutes/app",
-          title: "Waitstaff Calculator",
-          orientation: "tall",
-          indata:  {xoff: 55, yoff: 40, zoom:120},
-          outdata: {xoff:  0, yoff:  0, zoom:85}
+        {   id: "waitstaffcalc",
+            href: "http://jettagozoom.github.io/WaitstaffCalculatorWithRoutes/app",
+            title: "Waitstaff Calculator",
+            orientation: "tall",
+            hostenv: "GitHub Pages",
+            indata:  {xoff: 55, yoff: 40, zoom:120},
+            outdata: {xoff:  0, yoff:  0, zoom:85}
         },
-        { id: "calendardirective",
-          href: "http://jettagozoom.github.io/CalendarDirectiveChallenge/app",
-          title: "Calendar Directive",
-          orientation: "wide",
-          indata:  {xoff: 50, yoff: 20, zoom:150},
-          outdata: {xoff:  0, yoff: 70, zoom:80}
+        {   id: "calendardirective",
+            href: "http://jettagozoom.github.io/CalendarDirectiveChallenge/app",
+            title: "Calendar Directive",
+            orientation: "wide",
+            hostenv: "GitHub Pages",
+            indata:  {xoff: 50, yoff: 20, zoom:150},
+            outdata: {xoff:  0, yoff: 70, zoom:80}
         },
-        { id: "codemirrortextarea",
-          href: "http://jettagozoom.github.io/AngularCodeMirrorTextarea/app",
-          title: "CodeMirror Textarea",
-          orientation: "tall",
-          indata:  {xoff: 80, yoff: 20, zoom:150},
-          outdata: {xoff:  0, yoff:  0, zoom:100}
+        {   id: "codemirrortextarea",
+            href: "http://jettagozoom.github.io/AngularCodeMirrorTextarea/app",
+            title: "CodeMirror Textarea",
+            orientation: "tall",
+            hostenv: "GitHub Pages",
+            indata:  {xoff: 80, yoff: 20, zoom:150},
+            outdata: {xoff:  0, yoff:  0, zoom:100}
         },
-        { id: "spacer1",
-          href: "",
-          title: "",
-          orientation: "tall",
-          indata:  {xoff:  0, yoff:  0, zoom:100},
-          outdata: {xoff:  0, yoff:  0, zoom:100}
+        {   id: "spacer1",
+            href: "",
+            title: "",
+            orientation: "tall",
+            hostenv: "",
+            indata:  {xoff:  0, yoff:  0, zoom:100},
+            outdata: {xoff:  0, yoff:  0, zoom:100}
         },
-        { id: "ngmadlibs",
-          href: "http://jettagozoom.github.io/ngMadLibs",
-          title: "ngMadLibs",
-          orientation: "wide",
-          indata:  {xoff: 90, yoff:  0, zoom:110},
-          outdata: {xoff:  0, yoff:  50, zoom:75}
+        {   id: "ngmadlibs",
+            href: "http://jettagozoom.github.io/ngMadLibs",
+            title: "ngMadLibs",
+            orientation: "wide",
+            hostenv: "GitHub Pages",
+            indata:  {xoff: 90, yoff:  0, zoom:110},
+            outdata: {xoff:  0, yoff:  50, zoom:75}
         }
     ];
 
@@ -84,6 +92,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://jettagozoom.github.io/JsonApiHack/",
             title: "Stock Portfolio",
             orientation: "tall",
+            hostenv: "GitHub Pages",
             indata:  {xoff:  0, yoff: 0, zoom:150},
             outdata: {xoff:  0, yoff: 0, zoom:100}
         },
@@ -91,6 +100,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://jettagozoom.github.io/Quizalator/",
             title: "Quizalator",
             orientation: "wide",
+            hostenv: "GitHub Pages",
             indata:  {xoff:  0, yoff: 0, zoom:120},
             outdata: {xoff:  0, yoff: 0, zoom:70}
         },
@@ -98,6 +108,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://jettagozoom.github.io/ValentinesDayCard/",
             title: "Happy Valentines",
             orientation: "wide",
+            hostenv: "GitHub Pages",
             indata:  {xoff: 93, yoff: 50, zoom:140},
             outdata: {xoff: 50, yoff:  0, zoom:95}
         },
@@ -105,6 +116,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://pamsdoterra.herokuapp.com",
             title: "Pam's doTerra<br/>Invitations",
             orientation: "wide",
+            hostenv: "Website",
             indata:  {xoff:  0, yoff: 70, zoom:110},
             outdata: {xoff:  0, yoff:  0, zoom:100}
         },
@@ -112,6 +124,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://jettagozoom.github.io/HotOrCold/",
             title: "Hot-or-Cold",
             orientation: "wide",
+            hostenv: "GitHub Pages",
             indata:  {xoff: 50, yoff: 30, zoom:150},
             outdata: {xoff: 50, yoff:  0, zoom:100}
         },
@@ -119,6 +132,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://jettagozoom.github.io/37signals/",
             title: "37signals Clone",
             orientation: "wide",
+            hostenv: "GitHub Pages",
             indata:  {xoff: 50, yoff: 20, zoom:150},
             outdata: {xoff: 50, yoff:  0, zoom:100}
         },
@@ -126,6 +140,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "",
             title: "",
             orientation: "tall",
+            hostenv: "",
             indata:  {xoff:  0, yoff:  0, zoom:100},
             outdata: {xoff:  0, yoff:  0, zoom:100}
         },
@@ -133,6 +148,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://jettagozoom.github.io/GoogleClone/",
             title: "Google Clone",
             orientation: "wide",
+            hostenv: "GitHub Pages",
             indata:  {xoff: 50, yoff: 70, zoom:150},
             outdata: {xoff: 50, yoff:  0, zoom:100}
         }
@@ -143,6 +159,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://www8.hp.com/us/en/campaigns/workstations/remote-graphics-software.html",
             title: "HP Remote Graphics<br/>Software",
             orientation: "wide",
+            hostenv: "Website",
             indata:  {xoff: 50, yoff: 0, zoom:150},
             outdata: {xoff: 50, yoff: 0, zoom:100}
         },
@@ -150,6 +167,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://www.hpwebos.com/us/",
             title: "webOS on PC",
             orientation: "wide",
+            hostenv: "Website",
             indata:  {xoff: 100, yoff: 70, zoom:150},
             outdata: {xoff: 100, yoff: 70, zoom:100}
         },
@@ -157,6 +175,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "",
             title: "HPUX Graphics<br/>Device Drivers",
             orientation: "wide",
+            hostenv: "",
             indata:  {xoff: 50, yoff: 50, zoom:150},
             outdata: {xoff: 50, yoff: 50, zoom:100}
         },
@@ -164,6 +183,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "",
             title: "",
             orientation: "tall",
+            hostenv: "",
             indata:  {xoff:0, yoff:0, zoom:100},
             outdata: {xoff:0, yoff:0, zoom:100}
         },
@@ -171,6 +191,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://en.wikipedia.org/wiki/X_Window_System",
             title: "X11 Windows System",
             orientation: "wide",
+            hostenv: "Website",
             indata:  {xoff: 50, yoff: 100, zoom:150},
             outdata: {xoff: 50, yoff:  50, zoom:100}
         }
@@ -181,6 +202,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "http://www.hess.com/",
             title: "Seismic Data<br/>Processing<br/>@ Amerada Hess",
             orientation: "tall",
+            hostenv: "Website",
             indata:  {xoff: 10, yoff:  0, zoom:150},
             outdata: {xoff: 10, yoff: 20, zoom:100}
         },
@@ -188,6 +210,7 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
             href: "",
             title: "Seismic Data<br/>Acquisition<br/>@ Seismograph<br/>Service<br/>Corporation",
             orientation: "wide",
+            hostenv: "",
             indata:  {xoff: 0, yoff: 0, zoom:150},
             outdata: {xoff: 0, yoff: 0, zoom:100}
         }
