@@ -1,7 +1,7 @@
 <div id="{{proj.id}}" class="proj" ng-mouseenter="hoverin(proj)" ng-mouseleave="hoverout(proj)">
     <a class="overlay" href={{proj.href}} target="_blank">
         <div class="description">
-            <h2>{{proj.title}}</h2>
+            <h2 ng-bind-html="proj.title"></h2>
             <h4>Website</h4>
         </div>
     </a>
