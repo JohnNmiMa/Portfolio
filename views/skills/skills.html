@@ -1,1 +1,10 @@
-<h1>No shills shown yet!</h1>
+<section id="skills" class="container content">
+    <div ng-repeat="skillListItem in skillList">
+        <div class="title webtech">
+            <h5>{{skillListItem.id}}</h5>
+        </div>
+        <ul class="skillList">
+            <skill ng-repeat="skill in skillListItem.skills"/>
+        </ul>
+    </div>
+</section>

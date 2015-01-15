@@ -1,4 +1,4 @@
-angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
+var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
 
 .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when("/work", {
@@ -217,12 +217,6 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
     ]
 }])
 
-.controller('ExperienceCtrl', ['$scope', function($scope) {
-}])
-
-.controller('SkillsCtrl', ['$scope', function($scope) {
-}])
-
 .directive('project', [function() {
    return {
        restrict: 'E',
@@ -250,10 +244,17 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
            function doHover(xoff, yoff, zoom, orientation, h2size, h4size, displaOverlay) {
                zoomtran(xoff, yoff, zoom, orientation);
                setOverlaySize(img.height());
-               displayOverlay(displaOverlay);
-               setFontSize(h2, h2size);
-               setFontSize(h4, h4size);
-               centerOverlayTitle();
+               if (displaOverlay) {
+                   displayOverlay(displaOverlay);
+                   setFontSize(h2, h2size);
+                   setFontSize(h4, h4size);
+                   centerOverlayTitle();
+               } else {
+                   setFontSize(h2, h2size);
+                   setFontSize(h4, h4size);
+                   centerOverlayTitle();
+                   displayOverlay(displaOverlay);
+               }
            }
 
            function zoomtran(xoffset, yoffset, zoom, orientation) {
@@ -303,5 +304,8 @@ angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
            }
        }
    }
+}])
+
+.controller('ExperienceCtrl', ['$scope', function($scope) {
 }]);
 
