@@ -325,7 +325,7 @@ header {
 				-webkit-transition-timing-function: ease-out;
 			}
 
-		/* This is the overlay that lies on top of the image. By default it is shown as 
+		/* This is the overlay that lies on top of the image. By default it is shown as
 		 * hidden, and becomes visible when hovered over.*/
 		section .grid .proj a.overlay {
 			position:absolute;
@@ -340,7 +340,7 @@ header {
 				vertical-align:middle;
 				text-align:center;
 			}
-			
+
 				section .grid .proj a.overlay .description h2 {
 					font-size:0.9em;
 					line-height:30px;
@@ -362,7 +362,7 @@ header {
     #skills.content {
     }
         #skills.content .skillList {
-			margin:0 0 25px 0;
+			margin:0 0 15px 0;
 			line-height: 30px;
 		}
             #skills.content .skill {
