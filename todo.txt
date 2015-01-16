@@ -1,18 +1,25 @@
 Create Wireframe - DONE
 Create initial framework - DONE
 Understand how to display images in a grid - DONE
-- Valentine's Day Card - http://jettagozoom.github.io/ValentinesDayCard - P
+- Valentine's Day Card - http://jettagozoom.github.io/ValentinesDayCard - DONE
 - Pam's Doterra - http://pamsdoterra.herokuapp.com
 Add ANG section - DONE
-- SomeCode - http://somecode.pythonanywhere.com - P
-  Instagram Searcher - http://jettagozoom.github.io/PhotoBrowser - P
-  Countries-N-Capitals - http://jettagozoom.github.io/CountriesCapitals/app - P
-  WaitStaff Calculator - http://jettagozoom.github.io/WaitstaffCalculatorWithRoutes/app - P
-  CalendarDirective - http://jettagozoom.github.io/CalendarDirectiveChallenge/app/ - P
-  CodeMirror textarea - http://jettagozoom.github.io/AngularCodeMirrorTextarea/app/ - P
-  ngMadLibs - http://jettagozoom.github.io/ngMadLibs/ - P
+- SomeCode - http://somecode.pythonanywhere.com - DONE
+  Instagram Searcher - http://jettagozoom.github.io/PhotoBrowser - DONE
+  Countries-N-Capitals - http://jettagozoom.github.io/CountriesCapitals/app - DONE
+  WaitStaff Calculator - http://jettagozoom.github.io/WaitstaffCalculatorWithRoutes/app - DONE
+  CalendarDirective - http://jettagozoom.github.io/CalendarDirectiveChallenge/app/ - DONE
+  CodeMirror textarea - http://jettagozoom.github.io/AngularCodeMirrorTextarea/app/ - DONE
+  ngMadLibs - http://jettagozoom.github.io/ngMadLibs/ - DONE
 Add PIP section - DONE
 Work on Experience (Experience & Academics) - DONE
-  * Create chart showing experience over time
+  * Create chart showing experience over time - DONE
 Work on Skills
+- Input skills - DONE
+- Add ability to create skill links - DONE
+  - add links - DONE
+- Add ability to create skill popup summaries
+  - add popup summaries
+- Update "JohnMarks" such that when clicked, "more" informatation
+  will be shown.
 
