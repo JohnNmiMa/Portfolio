@@ -1,4 +1,6 @@
-portfolioApp.controller('WorkCtrl', ['$scope', function($scope) {
+portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
+                             function($rootScope,   $scope) {
+    $rootScope.selectedPage = 'work';
     $scope.angularProjects = [
         {   id: "somecode",
             href: "http://somecode.pythonanywhere.com/",

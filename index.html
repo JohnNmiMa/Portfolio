@@ -29,9 +29,12 @@
 				<div class="navigator">
 					<a class="name" href="#/work">John<span>Marks</span></a>
 					<ul class="menu" >
-						<li id="workbtn"><a href="#/work">Work</a></li>
-						<li id="expbtn"><a href="#/experience">Experience</a></li>
-						<li id="skillsbtn"><a href="#/skills">Skills</a></li>
+						<li id="workbtn" ng-class="{'selected': selectedPage === 'work'}">
+							<a href="#/work">Work</a></li>
+						<li id="expbtn"  ng-class="{'selected': selectedPage === 'experience'}">
+							<a href="#/experience">Experience</a></li>
+						<li id="skillsbtn" ng-class="{'selected': selectedPage === 'skills'}">>
+							<a href="#/skills">Skills</a></li>
 					</ul>
 				</div>
 			</section>
@@ -46,6 +49,7 @@
 		<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 		<script type="text/javascript" src="assets/js/app.js"></script>
 		<script type="text/javascript" src="views/work/work.js"></script>
+		<script type="text/javascript" src="views/experience/experience.js"></script>
 		<script type="text/javascript" src="views/skills/skills.js"></script>
 		<!-- endbuild -->
 	</body>

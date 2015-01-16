@@ -17,8 +17,5 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         controller : 'SkillsCtrl'
     })
     .otherwise({ redirectTo: '/' });
-}])
-
-.controller('ExperienceCtrl', ['$scope', function($scope) {
 }]);
 

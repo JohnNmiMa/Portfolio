@@ -1,4 +1,6 @@
-portfolioApp.controller('SkillsCtrl', ['$scope', function($scope) {
+portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
+                               function($rootScope,   $scope) {
+    $rootScope.selectedPage = 'skills';
     $scope.skillList = [
         {   id: "Web",
             skills: [

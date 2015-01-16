@@ -100,8 +100,10 @@ header {
 						color:inherit;
 						text-decoration: none;
 					}
-					ul.menu li a:hover,
-                    ul.menu li a:focus {
+					ul.menu li a:hover {
+						color:#41b7d8;
+					}
+                    ul.menu li.selected a {
 						color:#41b7d8;
 					}
 
@@ -360,7 +362,7 @@ header {
     #skills.content {
     }
         #skills.content .skillList {
-			margin:10px 0 25px;
+			margin:0 0 25px 0;
 			line-height: 30px;
 		}
             #skills.content .skill {
