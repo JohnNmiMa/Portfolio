@@ -50,13 +50,16 @@ header {
 	}
 	@media screen and (min-width: 0px) {
 		.container {
+			/*margin:0 auto 0 auto;*/
 			margin:0 auto 2% auto;
 			max-width:600px;
 		}
 	}
 	@media screen and (min-width: 600px) {
 		.container {
-			margin:0 5% 2% 5%;
+			/*margin:0 5% 2% 5%;*/
+			/*margin:0 5% 0 5%;*/
+			margin:0 10% 2% 10%;
 			max-width:100%;
 		}
 	}
@@ -153,6 +156,24 @@ header {
 					}
 		}
 
+.dude {
+	background-size: cover;
+	height:200px;
+	margin-bottom: 40px;
+}
+    .dude.bc {
+		background-image: url(images/bc.jpg);
+		background-position: 0 60%;
+	}
+    .dude.de-rosa {
+        background-image: url(images/de-rosa.jpg);
+        background-position: 0 60%;
+    }
+    .dude.downy {
+        background-image: url(images/downy.jpg);
+        background-position: 0 50%;
+    }
+
 	#work.content {
 	}
 
@@ -215,22 +236,22 @@ header {
 		}
 		@media screen and (min-width: 600px) {
 			.proj {
-				width:50%;
-				width:48%;
+				/*width:50%;*/
+				width:47%;
 				border:5px solid #fff;
 			}
 		}
 		@media screen and (min-width: 900px) {
 			.proj {
 				width:33.33332%;
-				width:32%;
+				width:31%;
 				border:5px solid #fff;
 			}
 		}
 		@media screen and (min-width: 1200px) {
 			.proj {
 				width:25%;
-				width:24%;
+				width:23%;
 				border:5px solid #fff;
 			}
 		}

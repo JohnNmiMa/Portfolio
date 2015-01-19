@@ -17,5 +17,17 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         controller : 'SkillsCtrl'
     })
     .otherwise({ redirectTo: '/' });
+}])
+
+.controller('main', ['$rootScope', '$scope', function($rootScope, $scope) {
+    $scope.headerPic = function() {
+        if ($rootScope.selectedPage === 'work') {
+            return 'bc';
+        } else if ($rootScope.selectedPage === 'experience') {
+            return 'de-rosa';
+        } else if ($rootScope.selectedPage === 'skills') {
+            return 'downy';
+        }
+    }
 }]);
 
