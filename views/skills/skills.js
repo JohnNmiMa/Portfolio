@@ -5,273 +5,226 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
         {   id: "Web",
             skills: [
                 {   title: "HTML",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "CSS/LESS",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "JavaScript",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "AngularJS/SPA",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "jQuery",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Twitter-Bootstrap",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "REST",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Python/Flask",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {
             id: "Language",
             skills: [
                 {   title: "JavaScript",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Python",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "C/C++",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Bash/Shell Scripting",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "OS",
             skills: [
                 {   title: "Mac OS X",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Windows (Win7 / Vista, XP, some Win8)",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Linux (Red Hat / Ubuntu)",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Cygwin",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "Framework",
             skills: [
                 {   title: "AngularJS",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "jQuery",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Twitter-Bootstrap",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Python/Flask",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Qt",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "boost",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "STL",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "ICE",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "Methodology",
             skills: [
                 {   title: "BDD/TDD",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Scrum",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "XP",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Incremental/Spiral",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Waterfall",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {    id: "IDE",
             skills: [
                 {   title: "JetBrains",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Visual Studio",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Vi/Vim/Terminal/Shell",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "Revision Control",
             skills: [
                 {   title: "Git/GitHub",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Subversion",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "BitKeeper",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Clearcase",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "RCS/SCCS",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "Testing",
             skills: [
                 {   title: "BDD/TDD",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Jasmin/Protractor/Selenium",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Python's unittest",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "Build",
             skills: [
                 {   title: "Gulp",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Visual Studio",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "qmake",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Make/NMake/iMake",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "DBMS",
             skills: [
                 {   title: "SQLite",
-                    href: "",
-                    summary: ""
+                    href: ""
                 },
                 {   title: "Flask-SQLAlchemy ORM",
-                    href: "",
-                    summary: ""
+                    href: ""
                 }
-            ]
+            ],
+            summary: ""
         },
         {   id: "Book",
             skills: [
                 {   title: "Soft Skills - The software developer's life manual - John Z. Sonmez",
-                    href: "http://amzn.com/1617292397",
-                    summary: ""
+                    href: "http://amzn.com/1617292397"
                 },
                 {   title: "JavaScript: The Good Parts - Douglass Crockford",
-                    href: "http://amzn.com/0596517742",
-                    summary: ""
+                    href: "http://amzn.com/0596517742"
                 },
                 {   title: "JavaScript Patterns - Stoyan Stefanov",
-                    href: "http://amzn.com/0596806752",
-                    summary: ""
+                    href: "http://amzn.com/0596806752"
                 },
                 {   title: "CSS Mastery - Andy Budd",
-                    href: "http://amzn.com/1430223979",
-                    summary: ""
+                    href: "http://amzn.com/1430223979"
                 },
                 {   title: "Flask Web Development - Miguel Grinberg",
-                    href: "http://amzn.com/1449372627",
-                    summary: ""
+                    href: "http://amzn.com/1449372627"
                 },
                 {   title: "Effective C++ - Scott Meyers",
-                    href: "http://amzn.com/0321334876",
-                    summary: ""
+                    href: "http://amzn.com/0321334876"
                 },
                 {   title: "Design Patterns - GOF (Gamma, Helm, Johnson, Vlissides",
-                    href: "http://amzn.com/0201633612",
-                    summary: ""
+                    href: "http://amzn.com/0201633612"
                 },
                 {   title: "Domain Driven Design - Eric Evans",
-                    href: "http://amzn.com/0321125215",
-                    summary: ""
+                    href: "http://amzn.com/0321125215"
                 },
                 {   title: "Advance Programming in the UNIX Environment - Stevens, Rago",
-                    href: "http://amzn.com/0321637739",
-                    summary: ""
+                    href: "http://amzn.com/0321637739"
                 },
                 {   title: "UNIX Network Programming - Stevens",
-                    href: "http://amzn.com/0131411551",
-                    summary: ""
+                    href: "http://amzn.com/0131411551"
                 },
                 {   title: "Programming Windows Security - Brown",
-                    href: "http://amzn.com/0201604426",
-                    summary: ""
+                    href: "http://amzn.com/0201604426"
                 }
             ],
             summary: ""

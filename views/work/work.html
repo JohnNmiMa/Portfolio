@@ -1,67 +1,7 @@
 <section id="work" class="container content">
-    <div class="title thinkful">
-        <h2>ANG (Learn AngularJS) @
-            <img src="images/thinkful.png">
-        </h2>
-        <h4>7/2014 - 9/2014</h4>
-    </div>
-    <div class="grid thinkful">
-        <project ng-repeat="proj in angularProjects"></project>
-    </div>
-    <div class="title thinkful">
-        <h2>PIP (Programming in Python) @
-            <img src="images/thinkful.png">
-        </h2>
-        <h4>3/2014 - 6/2014</h4>
-    </div>
-    <p>The PIP class has five sections. Part one gives a solid intro to the <b>Python</b> language
-        (basic data structures, string formatting, lists, dictionaries, comprehensions,
-        control flow, exception handling, functions, OO, File IO, serialization, debugging,
-        logging, etc.). Check out my <a href="https://github.com/jettagozoom/LPTHW" target="_blank">Learning Python
-            the Hard Way</a> GitHub repo <em>README</em> for further details.</p>
-    </p><br>
-    <p>Part two introduces <b>HTTP</b>, <b>REST</b>, <b>OAuth</b>, and taking those topics and hooking up
-        to the Twitter API.</p><br>
-    <p>Part three is where the we begin to work with databases. We are introduced to
-        <b>SQL</b>, the <b>SQLite DB</b>, and begin to practice creating tables, inserting records, normalizing
-        tables, performing queries and updates. Next, the <b>SQLAlchemy</b> ORM is discussed,
-        where we practice doing basic queries, filters, joins, searching using <b>WhooshAlchemy</b>, and finally
-        how to approach database migrations using <b>Flask-Migrate</b>.</p><br>
-    <p>Part four is where we are introduced to the <b>Flask</b>. Flask is a micro webdevelopment
-        framework for Python. It is based on the <b>Jinja2</b> templating engine (very cool) and
-        the <b>Werkzeug WSGI toolkit</b>. We are intoduced to <b>BDD</b> (Behavior Driven Design)
-        through the use of <b>Behave</b>, a Python based unit testing framework.</p><br>
-    <p>Part five is where we create an MVP. I chose to create a code snippet tool for developers. It
-        is based on HTML/CSS/JavaScript/jQuery on the front end, and Flask/SQLite/SQLAlchemy on the back-end.
-        This project was later enhance in the AngularJS class (above), where the front-end was rewritten using
-        AngularJS. Here is the GitHub
-        <a href="https://github.com/jettagozoom/MVP" target="_blank">repository</a>
-        and
-        <a href="http://jmsomecode.herokuapp.com" target="_blank">website</a>
-        for <b>JMSomeCode</b>.
-    </p><br>
-    <div class="title thinkful">
-        <h2>FEWD (Front End Web Development) @
-            <img src="images/thinkful.png">
-        </h2>
-        <h4>12/2013 - 2/2014</h4>
-    </div>
-    <div class="grid thinkful">
-        <project ng-repeat="proj in fewdProjects"></project>
-    </div>
-    <div class="title hp">
-        <h2>Previous Software Engineering Projects @ <img src="images/hplogo.png"</h2>
-        <h4>9/1989 - 8/2012</h4>
-    </div>
-    <div class="grid hp">
-        <project ng-repeat="proj in hpProjects"></project>
-    </div>
-
-    <div class="title seismic">
-        <h2>Seismic Data Acquisition and Processing @ <img src="images/hess.jpg"></h2>
-        <h4>9/1979 - 8/1986</h4>
-    </div>
-    <div class="grid seismic">
-        <project ng-repeat="proj in seismicProjects"></project>
-    </div>
+    <projects work="angularProjects"></projects>
+    <projects work="pipProjects"></projects>
+    <projects work="fewdProjects"></projects>
+    <projects work="hpProjects"></projects>
+    <projects work="seismicProjects"></projects>
 </section>

@@ -20,6 +20,12 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
 }])
 
 .controller('main', ['$rootScope', '$scope', function($rootScope, $scope) {
+    $scope.showSummaries = false;
+    $scope.toggleSummaries = function() {
+        $scope.showSummaries = !$scope.showSummaries;
+        $rootScope.$broadcast('showSummaries', $scope.showSummaries);
+    };
+
     $scope.headerPic = function() {
         if ($rootScope.selectedPage === 'work') {
             return 'bc';
@@ -28,6 +34,6 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         } else if ($rootScope.selectedPage === 'skills') {
             return 'downy';
         }
-    }
+    };
 }]);
 
