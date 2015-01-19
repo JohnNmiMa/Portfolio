@@ -35,5 +35,13 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
             return 'downy';
         }
     };
-}]);
+}])
 
+.directive('tooltip', [function(){
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs){
+            $(element).tooltip({delay:{'show':1000,'hide':100}, placement:attrs.placement});
+        }
+    };
+}]);
