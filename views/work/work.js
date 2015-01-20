@@ -248,9 +248,10 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
             "successful and performant product. Here his skills centered on C++, OO A&D, multi-threaded support, ICE, Qt, " +
             "cross platform support, and organizing team dynamics using Agile (XP, Scrum) techniques.</p><br/>" +
             "<p>John's final project got him involved in porting the Palm webOS operating system to run on a PC desktop. " +
-            "There were many challenges, very complex builds, and fun problems to solve. webOS on PC was successful but was " +
+            "There were many challenges, very complex builds, and fun problems to solve. webOS on PC was successfully " +
+            "ported but was later " +
             "mothballed when HP decided to stop investing in webOS. Shortly after the close of the project John took early " +
-            "retirement program from HP, and decided to pursue other career interests.",
+            "retirement from HP, and decided to pursue other career interests.",
         projects: [
             {
                 id: "rgs",
