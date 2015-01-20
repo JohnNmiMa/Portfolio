@@ -16,3 +16,7 @@ design/TestImageTranslation/
 *.swo
 
 *.svg~
+
+views/skills/skills.css
+
+views/work/work.css

@@ -163,6 +163,13 @@ ul.menu li.selected a {
   background-image: url(images/downy.jpg);
   background-position: 0 50%;
 }
+section .summary {
+  margin-bottom: 10px;
+}
+section .summary ul {
+  list-style: disc;
+  padding-left: 20px;
+}
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -270,23 +277,16 @@ ul.menu li.selected a {
 /*
  * Views: work, experience, skills
  */
-#work.content .title,
-#skills.content .title {
+#work.content .title {
   padding: 10px 15px 10px 23px;
   border-left: 7px solid #eee;
 }
 #work.content .title {
   margin: 0 0 30px -30px;
 }
-#skills.content .title {
-  margin: 0 0 0px -30px;
-}
 #work.content .title a {
   text-decoration: none;
   color: inherit;
-}
-#work.content .title a:hover {
-  color: #41b7d8;
 }
 #work.content .title.thinkful {
   font-size: 1.5em;
@@ -477,6 +477,11 @@ section .grid .proj a.overlay .description h4 {
 }
 #experience.content #experienceimage {
   width: 100%;
+}
+#skills.content .title {
+  padding: 10px 15px 10px 23px;
+  border-left: 7px solid #eee;
+  margin: 0 0 0px -30px;
 }
 #skills.content .skillList {
   margin: 0 0 15px 0;

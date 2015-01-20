@@ -6,7 +6,28 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
         class: "thinkful",
         titleImage: "images/thinkful.png",
         periodOfWork: "7/2014 - 9/2014",
-        summary: "",
+        summary:
+            "<p>This is a great class. It teaches the following really well:<p>" +
+            "<ul>" +
+                "<li><b>Two way data-binding</b> - A way to project the Model into the View, realtime, as the Model " +
+                    "changes, without having to do any DOM work. It is quite powerful, saving much time and added stability.</li>" +
+                "<li><b>Templates/Partials</b> - the View - great for <em>declaritively</em> inserting dynamic content. " +
+                    "Templates provide much project structure, and remove any need for HTML strings.</li>" +
+                "<li><b>MVC</b> - <em>Controllers</em> give the model access to the View, through the <em>scope</em></li>" +
+                "<li><b>Dependency Injection/Services</b> - DI is so powerful and useful - it brings great power and " +
+                    "stability to your code. Simply create a <em>Service</em> that has some useful function, such " +
+                    "as mashing up data from an external API, and inject the <em>service</em> into your controller " +
+                    "directive, or other Angular service.</li>" +
+                "<li><b>Directives</b> - As someone said, \"AngularJS should become HTML6\", and directives provide that. " +
+                    "Simply create your own <em>tag</em>, code up the directive, and declare your tags " +
+                    "throughout the HTML.</li><br/>" +
+            "</ul>" +
+            "<p>Testing in Angular is a bit tricky, but because of DI, it makes creating mocks much easier. The " +
+                "Jasmine and Karma testing frameworks are introduced where controllers, services, and directives are " +
+                "brought under test. </p><br/>" +
+            "<p>The final unit was dedicated to creating a capstone project. John chose to enhance his PIP MVP Snippet Tool " +
+                "project. Three months was spent working on <em>SomeCode</em>. Click on the picture of <em>SomeCode</em> below " +
+                "and check it out. Create an account, read the Welcome topic, and create your own topics and snippets!",
         projects: [
             {
                 id: "somecode",
@@ -118,11 +139,21 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
     };
 
     $scope.fewdProjects = {
-        title: "FEWD (Front End Web Development) @",
+        title: "FEWD (Front End WebDev) @",
         class: "thinkful",
         titleImage: "images/thinkful.png",
         periodOfWork: "12/2013 - 2/2014",
-        summary: "",
+        summary: "" +
+            "<p>John spun up on HTML, CSS, introductory JavaScript, jQuery, git/GitHub, AJAX, SPA, Responsive design, " +
+                "color theory, and creating wireframes and mockups. Many exercises and projects were created throughout " +
+            "the class. Below are a few of John's projects, showing introductory examples up to his final <em>Stock " +
+            "Portfolio</em> mashup.</p><br/>" +
+            "<p>To further his abilities in JavaScript, John read the following books:</p>" +
+            "<ul>" +
+                "<li><b>JavaSript</b>: The Good Parts by Douglas Crockford</li>" +
+                "<li><b>JavaSript</b> Patterns by Stoyan Stefanov</li>" +
+            "</ul><br/>" +
+            "<p>The final project was a personal online portfolio, which you are now viewing.",
         projects: [
             {
                 id: "stockportfolio",
@@ -200,11 +231,26 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
     };
 
     $scope.hpProjects = {
-        title: "Previous Software Engineering Projects @",
+        title: "Software Engineering Projects @",
         class: "hp",
         titleImage: "images/hplogo.png",
         periodOfWork: "9/1989 - 8/2012",
-        summary: "",
+        summary: "" +
+            "<p>John joined HP in 1989 and worked 24 years in the Fort Collins, CO plant. Initially working " +
+            "as an engineer in their computer graphics lab, he worked on many interesting and challenging projects. " +
+            "In the graphics lab he worked on the new at the time X11 windowing system, writing graphics drivers " +
+            ", producing the world's fastest X11 implementation, and adding cool functionality such as multi-monitor " +
+            "and multi-layer (image/overlay) support.</p><br/>" +
+            "<p>John then became interested in software collaboration and was one of three engineers in a startup group " +
+            "within HP that produced " +
+            "the <b>RGS</b> (Remote Graphics Software) product. " +
+            "His experience in the graphics space was just what was needed for a " +
+            "successful and performant product. Here his skills centered on C++, OO A&D, multi-threaded support, ICE, Qt, " +
+            "cross platform support, and organizing team dynamics using Agile (XP, Scrum) techniques.</p><br/>" +
+            "<p>John's final project got him involved in porting the Palm webOS operating system to run on a PC desktop. " +
+            "There were many challenges, very complex builds, and fun problems to solve. webOS on PC was successful but was " +
+            "mothballed when HP decided to stop investing in webOS. Shortly after the close of the project John took early " +
+            "retirement program from HP, and decided to pursue other career interests.",
         projects: [
             {
                 id: "rgs",
@@ -259,7 +305,14 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
         class: "seismic",
         titleImage: "images/hess.jpg",
         periodOfWork: "9/1979 - 8/1986",
-        summary: "",
+        summary: "" +
+            "<p>John started work out of school as a Geophysical Engineer, working for SSC and Amerada Hess Research. " +
+            "At SSC, he worked in the field as an Observer on a Seismic Crew shooting and gathering seismic data. He was " +
+            "promoted to the Tulsa office to run their Seismic Data Processing lab. He was responsible for producing " +
+            "accurate seismic images of the subsurface for SSC's clients.</p><br/>" +
+            "<p>John then hired on to work in the Amerada Hess Geophysics Lab in Tulsa, OK. He worked with a team of scientists " +
+            "experimenting on various image processing techniques to better image oil reseverves in the Gulf and " +
+            "throughout America.",
         projects: [
             {
                 id: "seismicprocessing",
