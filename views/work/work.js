@@ -26,7 +26,9 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
                 "Jasmine and Karma testing frameworks are introduced where controllers, services, and directives are " +
                 "brought under test. </p><br/>" +
             "<p>The final unit was dedicated to creating a capstone project. John chose to enhance his PIP MVP Snippet Tool " +
-                "project. Three months was spent working on <em>SomeCode</em>. Click on the picture of <em>SomeCode</em> below " +
+                "project called <em>SomeCode</em>. Three months was spent working on <em>SomeCode</em> where the" +
+                "old jQuery code was re-written using the declarative nature of AngularJS. " +
+                "Click on the picture of <em>SomeCode</em> below " +
                 "and check it out. Create an account, read the Welcome topic, and create your own topics and snippets!",
         projects: [
             {
@@ -238,16 +240,17 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
         summary: "" +
             "<p>John joined HP in 1989 and worked 24 years in the Fort Collins, CO plant. Initially working " +
             "as an engineer in their computer graphics lab, he worked on many interesting and challenging projects. " +
-            "In the graphics lab he worked on the new at the time X11 windowing system, writing graphics drivers " +
-            ", producing the world's fastest X11 implementation, and adding cool functionality such as multi-monitor " +
+            "In the graphics lab he worked on the new at the time X11 windowing system, writing graphics drivers, " +
+            "producing the world's fastest X11 implementation, and adding cool functionality such as multi-monitor " +
             "and multi-layer (image/overlay) support.</p><br/>" +
-            "<p>John then became interested in software collaboration and was one of three engineers in a startup group " +
+            "<p>John then became interested in software collaboration and was one of three engineers to start a group " +
             "within HP that produced " +
             "the <b>RGS</b> (Remote Graphics Software) product. " +
             "His experience in the graphics space was just what was needed for a " +
             "successful and performant product. Here his skills centered on C++, OO A&D, multi-threaded support, ICE, Qt, " +
             "cross platform support, and organizing team dynamics using Agile (XP, Scrum) techniques.</p><br/>" +
-            "<p>John's final project got him involved in porting the Palm webOS operating system to run on a PC desktop. " +
+            "<p>John's final project got him involved in helping to port the Palm webOS operating system to run on " +
+            "a PC desktop. " +
             "There were many challenges, very complex builds, and fun problems to solve. webOS on PC was successfully " +
             "ported but was later " +
             "mothballed when HP decided to stop investing in webOS. Shortly after the close of the project John took early " +
@@ -311,9 +314,10 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
             "At SSC, he worked in the field as an Observer on a Seismic Crew shooting and gathering seismic data. He was " +
             "promoted to the Tulsa office to run their Seismic Data Processing lab. He was responsible for producing " +
             "accurate seismic images of the subsurface for SSC's clients.</p><br/>" +
-            "<p>John then hired on to work in the Amerada Hess Geophysics Lab in Tulsa, OK. He worked with a team of scientists " +
-            "experimenting on various image processing techniques to better image oil reseverves in the Gulf and " +
-            "throughout America.",
+            "<p>John then hired on to work in the Amerada Hess Geophysics Research Lab in Tulsa, OK. " +
+            "He worked with a team of scientists " +
+            "experimenting on various image processing techniques to better image oil reserves in the " +
+            "Gulf of Mexico and throughout America.",
         projects: [
             {
                 id: "seismicprocessing",
