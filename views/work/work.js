@@ -317,7 +317,8 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
         projects: [
             {
                 id: "seismicprocessing",
-                href: "http://www.hess.com/",
+                //href: "http://www.hess.com/",
+                href: "http://www.hess.com/technology/finding-oil-and-gas/quality-of-seismic",
                 title: "Seismic Data<br/>Processing<br/>@ Amerada Hess",
                 orientation: "tall",
                 hostenv: "Website",

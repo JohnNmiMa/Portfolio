@@ -1,4 +1,4 @@
-var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'])
+var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize', 'ngTouch'])
 
 .config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when("/work", {
