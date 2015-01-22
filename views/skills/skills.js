@@ -134,6 +134,9 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
                 {   title: "Git/GitHub",
                     href: ""
                 },
+                {   title: "Mercurial",
+                    href: ""
+                },
                 {   title: "Subversion",
                     href: ""
                 },
@@ -144,20 +147,6 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
                     href: ""
                 },
                 {   title: "RCS/SCCS",
-                    href: ""
-                }
-            ],
-            summary: ""
-        },
-        {   id: "Testing",
-            skills: [
-                {   title: "BDD/TDD",
-                    href: ""
-                },
-                {   title: "Jasmin/Protractor/Selenium",
-                    href: ""
-                },
-                {   title: "Python's unittest",
                     href: ""
                 }
             ],
@@ -174,7 +163,32 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
                 {   title: "qmake",
                     href: ""
                 },
-                {   title: "Make/NMake/iMake",
+                {   title: "Make/CMake/NMake/iMake",
+                    href: ""
+                }
+            ],
+            summary: ""
+        },
+        {    id: "Continuous Integration",
+            skills: [
+                {   title: "Hudson / Jenkins",
+                    href: ""
+                },
+                {   title: "CruiseControl",
+                    href: ""
+                }
+            ],
+            summary: ""
+        },
+        {   id: "Testing",
+            skills: [
+                {   title: "BDD/TDD",
+                    href: ""
+                },
+                {   title: "Jasmin/Protractor/Selenium",
+                    href: ""
+                },
+                {   title: "Python's unittest",
                     href: ""
                 }
             ],
