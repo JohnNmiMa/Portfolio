@@ -150,7 +150,7 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
                 "color theory, and creating wireframes and mockups. Many exercises and projects were created throughout " +
             "the class. Below are a few of John's projects, showing introductory examples up to his final <em>Stock " +
             "Portfolio</em> mashup.</p><br/>" +
-            "<p>To further his abilities in JavaScript, John read the following books:</p>" +
+            "<p>To further his abilities in JavaScript, John internalized the following books:</p>" +
             "<ul>" +
                 "<li><b>JavaSript</b>: The Good Parts by Douglas Crockford</li>" +
                 "<li><b>JavaSript</b> Patterns by Stoyan Stefanov</li>" +
