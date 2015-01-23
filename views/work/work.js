@@ -258,37 +258,42 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
             "<p>Patents Held:</p>" +
             "<ol class='patent'>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=8762540' target='_blank'>" +
-                    "<em>8,762,540</em>: Managing multiple remote computing sessions displayed on a client device</a></li>" +
+                    "<em>8,762,540</em>: <b>Managing multiple remote computing sessions displayed on a client device</b> (RGS's logical KVM switch)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=8631342' target='_blank'>" +
-                    "<em>8,631,342</em>: Computer display control system and method</a></li>" +
+                    "<em>8,631,342</em>: <b>Computer display control system and method</b> (Composite Desktops on Single Display)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7903119' target='_blank'>" +
-                    "<em>7,903,119</em>: Compression of image regions according to graphics command type</a></li>" +
+                    "<em>7,903,119</em>: <b>Compression of image regions according to graphics command type</b> " +
+                    "(Reduce RGS bandwidth by cashing or rendering certain pritives locally)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7797435' target='_blank'>" +
-                    "<em>7,797,435</em>: Foregoing user credential collection if sending system is in an unauthenticated mutually exclusive connection state</a></li>" +
+                    "<em>7,797,435</em>: <b>Foregoing user credential collection if sending system is in an " +
+                    "unauthenticated mutually exclusive connection state</b> (UMEC Authentication)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7777754' target='_blank'>" +
-                    "<em>7,777,754</em>: System and method for communicating graphics image data over a communication network</a></li>" +
+                    "<em>7,777,754</em>: <b>System and method for communicating graphics image data over a communication network</b> " +
+                    "(Cheap, custom, RGS specific thin cleint)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7701460' target='_blank'>" +
-                    "<em>7,701,460</em>: Graphics systems and methods</a></li>" +
+                    "<em>7,701,460</em>: <b>Graphics systems and methods</b> (RGS's server side image compression techinques)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7589737' target='_blank'>" +
-                    "<em>7,589,737</em>: System and method for communicating graphics image data over a communication network</a></li>" +
+                    "<em>7,589,737</em>: <b>System and method for communicating graphics image data over a communication network</b> " +
+                "(Bandwidth reduction through sending \"Change Area Blocks\" within a \"Region of Interest\")</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7589731' target='_blank'>" +
-                    "<em>7,589,731</em>: Graphics systems and methods</a></li>" +
+                    "<em>7,589,731</em>: <b>Graphics systems and methods</b> (RGS's bandwidth reduction through bounding box refinement)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7450128' target='_blank'>" +
-                    "<em>7,450,128</em>: Systems and methods of providing image copy and modify commands to a receiver with an associated display</a></li>" +
+                    "<em>7,450,128</em>: <b>Systems and methods of providing image copy and modify commands to a receiver with an associated display</b> " +
+                    "(RGS's client side blt optimization using \"copy\" commands)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7064765' target='_blank'>" +
-                    "<em>7.064,765</em>: System and method for grabbing frames of graphical data</a></li>" +
+                    "<em>7.064,765</em>: <b>System and method for grabbing frames of graphical data</b> (Remote stereographics)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7055171' target='_blank'>" +
-                    "<em>7,055,171</em>: Highly secure computer system architecture for a heterogeneous client environment</a></li>" +
+                    "<em>7,055,171</em>: <b>Highly secure computer system architecture for a heterogeneous client environment</b> (Compute Utility)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6971110' target='_blank'>" +
-                    "<em>6,971,110</em>: System and method to pace event sharing collaboration across multiple distributed applications</a></li>" +
+                    "<em>6,971,110</em>: <b>System and method to pace event sharing collaboration across multiple distributed applications</b></a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6877027' target='_blank'>" +
-                    "<em>6,877,027</em>: System and method for providing synchronization verification of multiple applications across remote systems</a></li>" +
+                    "<em>6,877,027</em>: <b>System and method for providing synchronization verification of multiple applications across remote systems</b></a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6850967' target='_blank'>" +
-                    "<em>6,850,967</em>: System and method for ensuring transparent sychronization of multiple applications across remote systems</a></li>" +
+                    "<em>6,850,967</em>: <b>System and method for ensuring transparent sychronization of multiple applications across remote systems</b></a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6088005' target='_blank'>" +
-                    "<em>6,088,005</em>: Design and method for a large, virtual workspace</a></li>" +
+                    "<em>6,088,005</em>: <b>Design and method for a large, virtual workspace</b> (Single Logical Screen)</a></li>" +
                 "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6084553' target='_blank'>" +
-                    "<em>6,084,553</em>: Design and method for a large, virtual workspace</a></li>" +
+                    "<em>6,084,553</em>: <b>Design and method for a large, virtual workspace</b> (Single Logical Screen)</a></li>" +
             "</ol>",
         projects: [
             {
