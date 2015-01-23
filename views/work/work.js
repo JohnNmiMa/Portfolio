@@ -26,7 +26,7 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
                 "Jasmine and Karma testing frameworks are introduced where controllers, services, and directives are " +
                 "brought under test. </p><br/>" +
             "<p>The final unit was dedicated to creating a capstone project. John chose to enhance his PIP MVP Snippet Tool " +
-                "project called <em>SomeCode</em>. Three months was spent working on <em>SomeCode</em> where the" +
+                "project called <em>SomeCode</em>. Three months was spent working on <em>SomeCode</em> where the " +
                 "old jQuery code was re-written using the declarative nature of AngularJS. " +
                 "Click on the picture of <em>SomeCode</em> below " +
                 "and check it out. Create an account, read the Welcome topic, and create your own topics and snippets!",
@@ -254,7 +254,42 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
             "There were many challenges, very complex builds, and fun problems to solve. webOS on PC was successfully " +
             "ported but was later " +
             "mothballed when HP decided to stop investing in webOS. Shortly after the close of the project John took early " +
-            "retirement from HP, and decided to pursue other career interests.",
+            "retirement from HP, and decided to pursue other career interests.</p><br/>" +
+            "<p>Patents Held:</p>" +
+            "<ol class='patent'>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=8762540' target='_blank'>" +
+                    "<em>8,762,540</em>: Managing multiple remote computing sessions displayed on a client device</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=8631342' target='_blank'>" +
+                    "<em>8,631,342</em>: Computer display control system and method</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7903119' target='_blank'>" +
+                    "<em>7,903,119</em>: Compression of image regions according to graphics command type</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7797435' target='_blank'>" +
+                    "<em>7,797,435</em>: Foregoing user credential collection if sending system is in an unauthenticated mutually exclusive connection state</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7777754' target='_blank'>" +
+                    "<em>7,777,754</em>: System and method for communicating graphics image data over a communication network</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7701460' target='_blank'>" +
+                    "<em>7,701,460</em>: Graphics systems and methods</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7589737' target='_blank'>" +
+                    "<em>7,589,737</em>: System and method for communicating graphics image data over a communication network</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7589731' target='_blank'>" +
+                    "<em>7,589,731</em>: Graphics systems and methods</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7450128' target='_blank'>" +
+                    "<em>7,450,128</em>: Systems and methods of providing image copy and modify commands to a receiver with an associated display</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7064765' target='_blank'>" +
+                    "<em>7.064,765</em>: System and method for grabbing frames of graphical data</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=7055171' target='_blank'>" +
+                    "<em>7,055,171</em>: Highly secure computer system architecture for a heterogeneous client environment</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6971110' target='_blank'>" +
+                    "<em>6,971,110</em>: System and method to pace event sharing collaboration across multiple distributed applications</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6877027' target='_blank'>" +
+                    "<em>6,877,027</em>: System and method for providing synchronization verification of multiple applications across remote systems</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6850967' target='_blank'>" +
+                    "<em>6,850,967</em>: System and method for ensuring transparent sychronization of multiple applications across remote systems</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6088005' target='_blank'>" +
+                    "<em>6,088,005</em>: Design and method for a large, virtual workspace</a></li>" +
+                "<li><a href='http://patft1.uspto.gov/netacgi/nph-Parser?patentnumber=6084553' target='_blank'>" +
+                    "<em>6,084,553</em>: Design and method for a large, virtual workspace</a></li>" +
+            "</ol>",
         projects: [
             {
                 id: "rgs",
