@@ -17,9 +17,9 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
                 "<li><b>MVC</b> - <em>Controllers</em> give the model access to the View, through the <em>scope</em></li>" +
                 "<li><b>Dependency Injection/Services</b> - DI is so powerful and useful - it brings great power and " +
                     "stability to your code. Simply create a <em>Service</em> that has some useful function, such " +
-                    "as mashing up data from an external API, and inject the <em>service</em> into your controller " +
+                    "as mashing up data from an external API, and inject the <em>service</em> into your controller, " +
                     "directive, or other Angular service.</li>" +
-                "<li><b>Directives</b> - As someone said, \"AngularJS should become HTML6\", and directives provide that. " +
+                "<li><b>Directives</b> - As someone said, \"AngularJS is HTML6\", and directives make it so. " +
                     "Simply create your own <em>tag</em>, code up the directive, and declare your tags " +
                     "throughout the HTML.</li><br/>" +
             "</ul>" +
@@ -29,7 +29,7 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
             "<p>The final unit was dedicated to creating a capstone project. John chose to enhance his PIP MVP Snippet Tool " +
                 "project called <em>SomeCode</em>. Three months was spent working on <em>SomeCode</em> where the " +
                 "old jQuery code was re-written using the declarative nature of AngularJS. " +
-                "Click on the picture of <em>SomeCode</em> below " +
+                "Click on the <em>SomeCode</em> image below " +
                 "and check it out. Create an account, read the Welcome topic, and create your own topics and snippets!",
         projects: [
             {
@@ -149,7 +149,7 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
         companyImage: "images/thinkful.png",
         periodOfWork: "12/2013 - 2/2014",
         summary: "" +
-            "<p>John spun up on HTML, CSS, introductory JavaScript, jQuery, git/GitHub, AJAX, SPA, Responsive design, " +
+            "<p>John spun up on HTML, CSS, introductory JavaScript, jQuery, Git/GitHub, AJAX, SPA, Responsive design, " +
                 "color theory, and creating wireframes and mockups. Many exercises and projects were created throughout " +
             "the class. Below are a few of John's projects, showing introductory examples up to his final <em>Stock " +
             "Portfolio</em> mashup.</p><br/>" +
