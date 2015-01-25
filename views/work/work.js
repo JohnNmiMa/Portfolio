@@ -2,9 +2,10 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
                              function($rootScope,   $scope) {
     $rootScope.selectedPage = 'work';
     $scope.angularProjects = {
-        title: "ANG (Learn AngularJS) @",
+        company: "Thinkful",
+        job: "ANG (Learn AngularJS)",
         class: "thinkful",
-        titleImage: "images/thinkful.png",
+        companyImage: "images/thinkful.png",
         periodOfWork: "7/2014 - 9/2014",
         summary:
             "<p>This was a great class. It taught the following really well:<p>" +
@@ -107,9 +108,10 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
     };
 
     $scope.pipProjects = {
-        title: "PIP (Programming In Python) @",
+        company: "Thinkful",
+        job: "PIP (Programming In Python)",
         class: "thinkful",
-        titleImage: "images/thinkful.png",
+        companyImage: "images/thinkful.png",
         periodOfWork: "3/2014 - 6/2014",
         summary: " \
             <p>The PIP class has five sections. Part one gives a solid intro to the <b>Python</b> language \
@@ -141,9 +143,10 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
     };
 
     $scope.fewdProjects = {
-        title: "FEWD (Front End WebDev) @",
+        company: "Thinkful",
+        job: "FEWD (Front End WebDev)",
         class: "thinkful",
-        titleImage: "images/thinkful.png",
+        companyImage: "images/thinkful.png",
         periodOfWork: "12/2013 - 2/2014",
         summary: "" +
             "<p>John spun up on HTML, CSS, introductory JavaScript, jQuery, git/GitHub, AJAX, SPA, Responsive design, " +
@@ -233,9 +236,10 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
     };
 
     $scope.hpProjects = {
-        title: "Software Engineering Projects @",
+        company: "Hewlett-Packard",
+        job: "Software Engineer",
         class: "hp",
-        titleImage: "images/hplogo.png",
+        companyImage: "images/hplogo.png",
         periodOfWork: "9/1989 - 8/2012",
         summary: "" +
             "<p>John joined HP in 1989 and worked 24 years in the Fort Collins, CO plant. Initially working " +
@@ -345,9 +349,10 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
     };
 
     $scope.seismicProjects = {
-        title: "Seismic Data Acquisition and Processing @ SSC and",
+        company: "Amerada Hess, Seismograph Service Corp.",
+        job: "Seismic Data Acquisition and Processing",
         class: "seismic",
-        titleImage: "images/hess.jpg",
+        companyImage: "images/hess.jpg",
         periodOfWork: "9/1979 - 8/1986",
         summary: "" +
             "<p>John started work out of school as a Geophysical Engineer, working for SSC and Amerada Hess Research. " +
