@@ -164,7 +164,7 @@ ul.menu li.selected a {
   background-position: 0 50%;
 }
 section .summary {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   line-height: 1.6;
 }
 section .summary ul {
@@ -294,7 +294,7 @@ section .summary .patent a:visited {
   border-left: 7px solid #eee;
 }
 #work.content .title {
-  margin: 0 0 30px -30px;
+  margin: 0 0 20px -30px;
 }
 #work.content .title a {
   text-decoration: none;
