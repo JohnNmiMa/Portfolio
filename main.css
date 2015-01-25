@@ -173,7 +173,7 @@ section .summary ul {
 }
 section .summary ol {
   list-style-type: decimal;
-  padding-left: 30px;
+  padding-left: 35px;
 }
 section .summary .patent a {
   text-decoration: none;
