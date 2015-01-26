@@ -18,8 +18,8 @@ Work on Skills
 - Input skills - DONE
 - Add ability to create skill links - DONE
   - add links - DONE
-- Add ability to create skill popup summaries
+- Add ability to create skill popup summaries - DONE
   - add popup summaries
-- Update "JohnMarks" such that when clicked, "more" informatation
+- Update "JohnMarks" such that when clicked, "more" informatation - DONE
   will be shown.
 

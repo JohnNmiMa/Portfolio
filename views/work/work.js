@@ -8,7 +8,7 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
         companyImage: "images/thinkful.png",
         periodOfWork: "7/2014 - 9/2014",
         summary:
-            "<p>This was a great class. It taught the following really well:<p>" +
+            "<p>This was a great class. The following was taught quite well:<p>" +
             "<ul>" +
                 "<li><b>Two way data-binding</b> - A way to project the Model into the View, realtime, as the Model " +
                     "changes, without having to do any DOM work. It is quite powerful, saving much time and added stability.</li>" +

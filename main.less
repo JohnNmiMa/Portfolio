@@ -176,6 +176,22 @@ ul.menu li.selected a {
     background-position: 0 50%;
 }
 
+.theview {
+    position: relative;
+    margin:0 5px;
+}
+@media screen and (min-width: 600px) {
+    .theview {
+        position: relative;
+        margin:0;
+    }
+}
+.work-container, .experience-container, .skills-container {
+    position:absolute;
+    top:0px;
+    right:0;
+    left:0;
+}
 section .summary {
     margin-bottom: 20px;
     line-height: 1.6;
@@ -304,6 +320,81 @@ section .summary {
     border-width: 0 5px 5px;
     border-bottom-color: @tooltip-color;
 }
+
+
+.fadeOutDown.ng-leave {
+    -webkit-animation-name: fadeOutDown;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-in;
+    animation: fadeOutDown;
+    animation: .8s;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 50px, 0);
+        -ms-transform: translate3d(0, 50px, 0);
+        transform: translate3d(0, 50px, 0);
+    }
+}
+
+.fadeInDown.ng-enter {
+    -webkit-animation-name: fadeInDown;
+    -webkit-animation-duration: .8s;
+    -webkit-animation-timing-function: ease-out;
+    animation-name: fadeInDown;
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, -50px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -50px, 0);
+        -ms-transform: translate3d(0, -50px, 0);
+        transform: translate3d(0, -50px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+
 
 /*
  * Views: work, experience, skills

@@ -15,7 +15,7 @@
 		<header>
 			<div class="top">
 				<ul>
-					<li class="linkedinButton" tooltip title="Connect to me please" placement="left" delay="500">
+					<li class="linkedinButton" tooltip title="Link to me" placement="left" delay="500">
 						<a href="http://www.linkedin.com/in/johnmarksjr" target="_blank">
                             <i class="fa fa-linkedin"></i></a></li>
 					<li class="githubButton" tooltip title="Repos" placement="bottom" delay="500">
@@ -49,19 +49,22 @@
 		</header>
 		<!--<div class="dude" ng-class="headerPic()"></div>-->
 
-		<div ng-view></div>
+        <div ng-view class="theview fadeInDown fadeOutDown"></div>
 
-		<!-- build:js ./../static/combined.js -->
-		<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-		<script type="text/javascript" src="bower_components/angular-touch/angular-touch.js"></script>
-		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
-		<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-		<script type="text/javascript" src="app.js"></script>
-		<script type="text/javascript" src="views/work/work.js"></script>
-		<script type="text/javascript" src="views/experience/experience.js"></script>
-		<script type="text/javascript" src="views/skills/skills.js"></script>
-		<!-- endbuild -->
+        <div>
+            <!-- build:js ./../static/combined.js -->
+            <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+            <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+            <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+            <script type="text/javascript" src="bower_components/angular-touch/angular-touch.js"></script>
+            <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+            <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+            <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+            <script type="text/javascript" src="views/work/work.js"></script>
+            <script type="text/javascript" src="views/experience/experience.js"></script>
+            <script type="text/javascript" src="views/skills/skills.js"></script>
+            <!-- endbuild -->
+        </div>
 	</body>
 </html>
