@@ -326,8 +326,8 @@ section .summary {
     -webkit-animation-name: fadeOutDown;
     -webkit-animation-duration: .5s;
     -webkit-animation-timing-function: ease-in;
-    animation: fadeOutDown;
-    animation: .5s;
+    animation-name: fadeOutDown;
+    animation-duration: .5s;
     animation-timing-function: ease-in;
 }
 
@@ -378,6 +378,10 @@ section .summary {
         transform: translate3d(0, -40px, 0);
     }
 
+    75% {
+        opacity: .5;
+    }
+
     100% {
         opacity: 1;
         -webkit-transform: none;
@@ -398,6 +402,10 @@ section .summary {
         -webkit-transform: translate3d(0, -40px, 0);
         -ms-transform: translate3d(0, -40px, 0);
         transform: translate3d(0, -40px, 0);
+    }
+
+    75% {
+        opacity: .5;
     }
 
     100% {

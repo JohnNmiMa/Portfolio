@@ -312,8 +312,8 @@ section .summary .patent a:visited {
   -webkit-animation-name: fadeOutDown;
   -webkit-animation-duration: .5s;
   -webkit-animation-timing-function: ease-in;
-  animation: fadeOutDown;
-  animation: .5s;
+  animation-name: fadeOutDown;
+  animation-duration: .5s;
   animation-timing-function: ease-in;
 }
 @-webkit-keyframes fadeOutDown {
@@ -356,6 +356,9 @@ section .summary .patent a:visited {
     -webkit-transform: translate3d(0, -40px, 0);
     transform: translate3d(0, -40px, 0);
   }
+  75% {
+    opacity: .5;
+  }
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -374,6 +377,9 @@ section .summary .patent a:visited {
     -webkit-transform: translate3d(0, -40px, 0);
     -ms-transform: translate3d(0, -40px, 0);
     transform: translate3d(0, -40px, 0);
+  }
+  75% {
+    opacity: .5;
   }
   100% {
     opacity: 1;
@@ -552,6 +558,9 @@ section .grid .proj .image {
   -webkit-transition-property: background-position background-size;
   -webkit-transition-duration: 0.25s;
   -webkit-transition-timing-function: ease-out;
+  transition-property: background-position background-size;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
 }
 /* This is the overlay that lies on top of the image. By default it is shown as
 		 * hidden, and becomes visible when hovered over.*/
@@ -562,6 +571,7 @@ section .grid .proj a.overlay {
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0);
   -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
 }
 section .grid .proj a.overlay .description {
   vertical-align: middle;
@@ -572,6 +582,7 @@ section .grid .proj a.overlay .description h2 {
   line-height: 30px;
   color: #fff;
   -webkit-transition: font-size 0.2s ease-out;
+  transition: font-size 0.2s ease-out;
 }
 section .grid .proj a.overlay .description h4 {
   font-size: 0,9em;
@@ -579,6 +590,7 @@ section .grid .proj a.overlay .description h4 {
   line-height: 24px;
   color: #ccc;
   -webkit-transition: font-size 0.2s ease-out;
+  transition: font-size 0.2s ease-out;
 }
 #experience.content #experienceimage {
   width: 100%;
