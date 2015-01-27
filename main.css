@@ -188,11 +188,11 @@ section .summary {
 }
 section .summary ul {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 section .summary ol {
   list-style-type: decimal;
-  padding-left: 35px;
+  padding-left: 20px;
 }
 section .summary .patent {
   font-size: .80em;
