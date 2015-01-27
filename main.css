@@ -310,10 +310,10 @@ section .summary .patent a:visited {
 }
 .fadeOutDown.ng-leave {
   -webkit-animation-name: fadeOutDown;
-  -webkit-animation-duration: .5s;
+  -webkit-animation-duration: .6s;
   -webkit-animation-timing-function: ease-in;
   animation-name: fadeOutDown;
-  animation-duration: .5s;
+  animation-duration: .6s;
   animation-timing-function: ease-in;
 }
 @-webkit-keyframes fadeOutDown {
@@ -321,9 +321,9 @@ section .summary .patent a:visited {
     opacity: 1;
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 50px, 0);
-    transform: translate3d(0, 50px, 0);
+    opacity: 0.1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
   }
 }
 @keyframes fadeOutDown {
@@ -331,33 +331,30 @@ section .summary .patent a:visited {
     opacity: 1;
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 50px, 0);
-    -ms-transform: translate3d(0, 50px, 0);
-    transform: translate3d(0, 50px, 0);
+    opacity: 0.1;
+    -webkit-transform: translate3d(0, 20px, 0);
+    -ms-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
   }
 }
 .fadeInDown.ng-enter {
   -webkit-animation-name: fadeInDown;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 1.2s;
   -webkit-animation-timing-function: ease-out;
   animation-name: fadeInDown;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   animation-timing-function: ease-out;
 }
 @-webkit-keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
   }
-  50% {
+  40% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -40px, 0);
-    transform: translate3d(0, -40px, 0);
-  }
-  75% {
-    opacity: .5;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
   100% {
     opacity: 1;
@@ -368,18 +365,78 @@ section .summary .patent a:visited {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -50px, 0);
-    -ms-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -20px, 0);
+    -ms-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
   }
-  50% {
+  40% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -40px, 0);
-    -ms-transform: translate3d(0, -40px, 0);
-    transform: translate3d(0, -40px, 0);
+    -webkit-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
-  75% {
-    opacity: .5;
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+.fadeOutUp.ng-hide-add {
+  -webkit-animation-name: fadeOutUp;
+  -webkit-animation-duration: .2s;
+  -webkit-animation-timing-function: ease-in;
+  animation-name: fadeOutUp;
+  animation-duration: .2s;
+  animation-timing-function: ease-in;
+}
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+}
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+    -ms-transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -20px, 0);
+  }
+}
+.fadeInDownNow.ng-hide-remove {
+  -webkit-animation-name: fadeInDownNow;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-timing-function: ease-out;
+  animation-name: fadeInDownNow;
+  animation-duration: .6s;
+  animation-timing-function: ease-out;
+}
+@-webkit-keyframes fadeInDownNow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDownNow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
   100% {
     opacity: 1;
