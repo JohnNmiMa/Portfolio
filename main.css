@@ -310,10 +310,10 @@ section .summary .patent a:visited {
 }
 .fadeOutDown.ng-leave {
   -webkit-animation-name: fadeOutDown;
-  -webkit-animation-duration: .8s;
+  -webkit-animation-duration: .5s;
   -webkit-animation-timing-function: ease-in;
   animation: fadeOutDown;
-  animation: .8s;
+  animation: .5s;
   animation-timing-function: ease-in;
 }
 @-webkit-keyframes fadeOutDown {
@@ -339,10 +339,10 @@ section .summary .patent a:visited {
 }
 .fadeInDown.ng-enter {
   -webkit-animation-name: fadeInDown;
-  -webkit-animation-duration: .8s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: ease-out;
   animation-name: fadeInDown;
-  animation-duration: .8s;
+  animation-duration: 1s;
   animation-timing-function: ease-out;
 }
 @-webkit-keyframes fadeInDown {
@@ -350,6 +350,11 @@ section .summary .patent a:visited {
     opacity: 0;
     -webkit-transform: translate3d(0, -50px, 0);
     transform: translate3d(0, -50px, 0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
   }
   100% {
     opacity: 1;
@@ -363,6 +368,12 @@ section .summary .patent a:visited {
     -webkit-transform: translate3d(0, -50px, 0);
     -ms-transform: translate3d(0, -50px, 0);
     transform: translate3d(0, -50px, 0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -40px, 0);
+    -ms-transform: translate3d(0, -40px, 0);
+    transform: translate3d(0, -40px, 0);
   }
   100% {
     opacity: 1;
