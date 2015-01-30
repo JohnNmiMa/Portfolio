@@ -8,17 +8,19 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
         companyImage: "images/thinkful.png",
         periodOfWork: "7/2014 - 9/2014",
         summary:
-            "<p>This was a great class. The following was taught quite well:<p>" +
+            "<p>This was a great class. The following subjects were presented:<p>" +
             "<ul>" +
                 "<li><b>Two way data-binding</b> - A way to project the Model into the View, realtime, as the Model " +
                     "changes, without having to do any DOM work. It is quite powerful, saving much time and added stability.</li>" +
                 "<li><b>Templates/Partials</b> - the View - great for <em>declaritively</em> inserting dynamic content. " +
                     "Templates provide much project structure, and remove any need for HTML strings.</li>" +
-                "<li><b>MVC</b> - <em>Controllers</em> give the model access to the View, through the <em>scope</em></li>" +
-                "<li><b>Dependency Injection/Services</b> - DI is so powerful and useful - it brings great power and " +
+                "<li><b>MVC</b> - <em>Controllers</em> connect the Model to the View, through the controller's <em>scope</em></li>" +
+                "<li><b>Dependency Injection/Services</b> - the DI pattern is powerful and useful - it brings great power and " +
                     "stability to your code. Simply create a <em>Service</em> that has some useful function, such " +
                     "as mashing up data from an external API, and inject the <em>service</em> into your controller, " +
-                    "directive, or other Angular service.</li>" +
+                    "directive, or other Angular service that reqires (is dependent upon) the service. " +
+                    "Angular handles the rest - creating the angular component when needed, " +
+                    "only once (as a singleton), and properly injecting the component to other components as they are requested.</li>" +
                 "<li><b>Directives</b> - As someone said, \"AngularJS is HTML6\", and directives make it so. " +
                     "Simply create your own <em>tag</em>, code up the directive, and declare your tags " +
                     "throughout the HTML.</li><br/>" +
@@ -127,7 +129,7 @@ portfolioApp.controller('WorkCtrl', ['$rootScope', '$scope',
                tables, performing queries and updates. Next, the <b>SQLAlchemy</b> ORM is discussed, \
                where we practice doing basic queries, filters, joins, searching using <b>WhooshAlchemy</b>, and finally \
                how to approach database migrations using <b>Flask-Migrate</b>.</p><br> \
-            <p>Part four is where we are introduced to the <b>Flask</b>. Flask is a micro webdevelopment \
+            <p>Part four is where we are introduced to the <b>Flask</b>. Flask is a micro web development \
                framework for Python. It is based on the <b>Jinja2</b> templating engine (very cool) and \
                the <b>Werkzeug WSGI toolkit</b>. We are intoduced to <b>BDD</b> (Behavior Driven Design) \
                through the use of <b>Behave</b>, a Python based unit testing framework.</p><br> \
