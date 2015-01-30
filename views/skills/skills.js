@@ -129,7 +129,7 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
             ],
             summary: ""
         },
-        {   id: "Revision Control",
+        {   id: "VCS",
             skills: [
                 {   title: "Git/GitHub",
                     href: ""
@@ -169,7 +169,7 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
             ],
             summary: ""
         },
-        {    id: "Continuous Integration",
+        {    id: "CI",
             skills: [
                 {   title: "Hudson / Jenkins",
                     href: ""
@@ -180,7 +180,7 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
             ],
             summary: ""
         },
-        {   id: "Testing",
+        {   id: "Test",
             skills: [
                 {   title: "BDD/TDD",
                     href: ""
