@@ -1,6 +1,7 @@
 /* Less variables */
 body {
   font-family: 'AvenirNext-Regular', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 header {
   font-size: 1.6rem;
