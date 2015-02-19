@@ -85,7 +85,6 @@ ul.menu {
 }
 ul.menu li {
   line-height: 35px;
-  text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
 }
 ul.menu li#workbtn {
   padding-right: 6px;
@@ -463,7 +462,6 @@ section .summary .patent a:visited {
 #work.content .title h2 {
   font-size: 1.3em;
   font-weight: 600;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 #work.content .title h2 .job {
   font-size: .7em;
@@ -658,7 +656,6 @@ section .grid .proj a.overlay .description h4 {
   padding: 10px 15px 10px 23px;
   border-left: 7px solid #eee;
   margin: 0 0 0px -30px;
-  text-shadow: 1.5px 1.5px 1.5px rgba(0, 0, 0, 0.2);
 }
 #skills.content .skillList {
   margin: 0 0 15px 0;
