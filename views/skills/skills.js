@@ -185,7 +185,11 @@ portfolioApp.controller('SkillsCtrl', ['$rootScope', '$scope',
                 {   title: "BDD/TDD",
                     href: ""
                 },
-                {   title: "Jasmin/Protractor/Selenium",
+                {
+                    title: "Jasmin BDD Framework / Karma test runner",
+                    href: ""
+                },
+                {   title: "Protractor AngularJS Framework /Selenium web driver",
                     href: ""
                 },
                 {   title: "Python's unittest",
