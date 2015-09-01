@@ -2,7 +2,6 @@
 design/TestGrid/
 design/TestHeader/
 design/TestImageTranslation/
-bower_components/
 
 *.html~
 
