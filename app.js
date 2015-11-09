@@ -16,6 +16,10 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         templateUrl : "./views/skills/skills.html",
         controller : 'SkillsCtrl'
     })
+        .when("/careers", {
+            templateUrl : "./views/careers/careers.html",
+            controller : 'CareersCtrl'
+        })
     .otherwise({ redirectTo: '/' });
 }])
 

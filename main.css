@@ -86,13 +86,16 @@ ul.menu {
 ul.menu li {
   line-height: 35px;
 }
-ul.menu li#workbtn {
-  padding-right: 6px;
-}
-ul.menu li#expbtn {
+ul.menu li#workbtn,
+ul.menu li#expbtn,
+ul.menu li#skillsbtn,
+ul.menu li#careersbtn {
   padding: 0 6px;
 }
-ul.menu li#skillsbtn {
+ul.menu li:first-child {
+  padding-right: 6px;
+}
+ul.menu li:last-child {
   padding-left: 6px;
 }
 ul.menu li a {
