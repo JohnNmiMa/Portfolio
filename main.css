@@ -49,10 +49,10 @@ header {
   .container {
     /*margin:0 auto 0 auto;*/
     margin: 0 auto 2% auto;
-    max-width: 600px;
+    max-width: 736px;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 737px) {
   .container {
     /*margin:0 5% 2% 5%;*/
     /*margin:0 5% 0 5%;*/
@@ -128,7 +128,7 @@ ul.menu li.selected a {
     vertical-align: middle;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 737px) {
   .navigator {
     /*margin: 45px 0 25px 0;*/
     position: relative;
@@ -172,7 +172,7 @@ ul.menu li.selected a {
   position: relative;
   margin: 0 5px;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 737px) {
   .theview {
     position: relative;
     margin: 0;

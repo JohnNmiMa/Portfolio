@@ -3,9 +3,9 @@
 	<head>
 		<title>John Marks</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
 		<!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">-->
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- build:css ./../static/combined.css -->
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Muli">
 		<link type="text/css" rel="stylesheet" href="reset.css">
@@ -45,15 +45,18 @@
 							<a href="#/experience">Experience</a></li>
 						<li id="skillsbtn" ng-class="{'selected': selectedPage === 'skills'}">
 							<a href="#/skills">Skills</a></li>
-						<li id="careersbtn" ng-class="{'selected': selectedPage === 'careers'}">
-							<a href="#/careers">Careers</a></li>
+						<!--<li id="careersbtn" ng-class="{'selected': selectedPage === 'careers'}">-->
+							<!--<a href="#/careers">Careers</a></li>-->
 					</ul>
 				</div>
 			</section>
 		</header>
 		<!--<div class="dude" ng-class="headerPic()"></div>-->
 
+		<!--Use this one to enable animations-->
         <div ng-view class="theview fadeInDown fadeOutDown"></div>
+		<!--Use this one to disable animations-->
+		<!--<div ng-view class="theview"></div>-->
 
         <div>
             <!-- build:js ./../static/combined.js -->
