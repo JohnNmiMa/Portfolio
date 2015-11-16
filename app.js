@@ -18,15 +18,15 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
     })
     // Use for Newton single-line iframe careers pages
     .when("/careers", {
-        template : "<div</div>",
-        controller : function() {
-            window.location.replace("http://192.168.56.101/career/CareerHome.action?clientId=8a80838f4f51d8b0014f525b120e000b");
-        }
+        templateUrl : "./views/careers/careers.html",
+        controller : 'CareersCtrl'
     })
     // Use for Newton hosted careers pages
     //.when("/careers", {
-    //    templateUrl : "./views/careers/careers.html",
-    //        controller : 'CareersCtrl'
+    //    template : "<div</div>",
+    //    controller : function() {
+    //        window.location.replace("http://192.168.56.101/career/CareerHome.action?clientId=8a80838f4f51d8b0014f525b120e000b");
+    //    }
     //})
     .otherwise({ redirectTo: '/' });
 }])
