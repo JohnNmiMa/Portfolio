@@ -45,10 +45,12 @@
 							<a href="#/experience">Experience</a></li>
 						<li id="skillsbtn" ng-class="{'selected': selectedPage === 'skills'}">
 							<a href="#/skills">Skills</a></li>
-						<!--<li id="careersbtn" ng-class="{'selected': selectedPage === 'careers'}">-->
-							<!--<a href="#/careers">Careers</a></li>-->
+						<li id="careersbtn" ng-class="{'selected': selectedPage === 'careers'}">
+							<a href="#/careers">Careers</a></li>
 					</ul>
 				</div>
+				<div class="browserType"
+					 ng-if="showSummaries"><span class="isMobile">{{isMobileDevice?"Is Mobile":"Is not Mobile"}}</span>: {{browserStr}}</div>
 			</section>
 		</header>
 		<!--<div class="dude" ng-class="headerPic()"></div>-->

@@ -209,6 +209,12 @@ section .summary .patent a:link,
 section .summary .patent a:visited {
   color: inherit;
 }
+.browserType {
+  font-size: .6em;
+}
+.browserType .isMobile {
+  font-weight: 700;
+}
 .tooltip {
   position: absolute;
   z-index: 1070;
