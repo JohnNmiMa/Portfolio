@@ -50,7 +50,9 @@
 					</ul>
 				</div>
 				<div class="browserType"
-					 ng-if="showSummaries"><span class="isMobile">{{isMobileDevice?"Is Mobile":"Is not Mobile"}}</span>: {{browserStr}}</div>
+					 ng-if="showSummaries"><span class="isMobile">{{isMobileDeviceMQ?"Is Mobile using media query":"Is not Mobile using media query"}}</span>: {{mobileDeviceMQStr}}</div><br>
+				<div class="browserType"
+					 ng-if="showSummaries"><span class="isMobile">{{isMobileDeviceUA?"Is Mobile using userAgent str":"Is not Mobile using userAgent str"}}</span>: {{mobileDeviceUAStr}}</div>
 			</section>
 		</header>
 		<!--<div class="dude" ng-class="headerPic()"></div>-->
