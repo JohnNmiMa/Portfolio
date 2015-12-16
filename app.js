@@ -88,7 +88,8 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
             htmlH = document.documentElement.offsetHeight,
             mqPixelRatio1 = window.matchMedia( "(-webkit-max-device-pixel-ratio: 1)" ),
             mqPixelRatio2 = window.matchMedia( "(-webkit-min-device-pixel-ratio: 1.1) and (-webkit-max-device-pixel-ratio: 4)" ),
-            mqPixelRatio5 = window.matchMedia( "(-webkit-min-device-pixel-ratio: 4.01)" );
+            mqPixelRatio5 = window.matchMedia( "(-webkit-min-device-pixel-ratio: 4.01)" ),
+            mqPixelRatioStr = "";
 
         if (mqPixelRatio1.matches) {
             mqPixelRatioStr = "PixelRatio = 1";
