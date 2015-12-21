@@ -37,11 +37,15 @@ header {
         border-radius: 50%;
         padding: 5px 0px 0px 3px;
         -webkit-tap-highlight-color: rgba(0,0,0,0);
+        transition: all .15s ease-in;
     }
     .mobile-links .hamburger:focus {
         outline: none;
     }
-    .mobile-links.expand .hamburger { background:rgba(47,54,66,0.2); }
+    .mobile-links.expand .hamburger {
+        background:rgba(47,54,66,0.2);
+        transition: all .15s ease-out;
+    }
     .mobile-links .hamburger span {
         display: block;
         width: 19px;
@@ -61,7 +65,10 @@ header {
         width:50%;
         background-color: #444;
     }
-    .mobile-links.expand .mobile-menu { display: block !important; }
+    .mobile-links.expand .mobile-menu {
+        display: block !important;
+        transition: all .5s ease-out;
+    }
     .mobile-links .mobile-menu ul {
         list-style-type: none;
         text-align: left;
