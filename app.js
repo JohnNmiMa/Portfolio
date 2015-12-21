@@ -57,6 +57,11 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         }
     };
 
+    $scope.toggleHamburger = function(ele) {
+        var mobileLinks = document.getElementsByClassName('mobile-links')[0];
+        mobileLinks.classList.toggle('expand');
+    };
+
     function init() {
         mqOrientation.addListener(isMobileUsingMediaQuery);
         $scope.isMobileDeviceMQ = isMobileUsingMediaQuery(mqOrientation);
@@ -118,6 +123,7 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         $scope.mobileDeviceUAStr = str;
         return false;
     }
+
 
     init();
 }])

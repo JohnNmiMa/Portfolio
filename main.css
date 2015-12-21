@@ -10,36 +10,121 @@ header {
 .top {
   height: 40px;
 }
-.top ul {
-  float: right;
-  padding-top: 10px;
+@media screen and (min-width: 0px) {
+  .desktop-links {
+    display: none;
+  }
+  .mobile-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #41b7d8;
+    margin-bottom: 10px;
+    z-index: 100010;
+  }
+  .mobile-links .hamburger {
+    position: absolute;
+    margin: auto;
+    width: 22px;
+    height: 20px;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    border: 7px solid transparent;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 5px 0px 0px 3px;
+  }
+  .mobile-links.expand .hamburger {
+    background: #2f3642;
+  }
+  .mobile-links .hamburger span {
+    display: block;
+    width: 19px;
+    height: 2px;
+    margin: 4px 0;
+    background: #ffffff;
+    z-index: 99;
+  }
+  .mobile-links.expand .hamburger span {
+    background: rgba(255, 255, 255, 0.6);
+  }
+  .mobile-links .hamburger span:first-of-type {
+    margin-top: 0;
+  }
+  .mobile-links .hamburger span:last-of-type {
+    margin-bottom: 0;
+  }
+  .mobile-links .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    background-color: #2F3642;
+  }
+  .mobile-links.expand .mobile-menu {
+    display: block !important;
+  }
+  .mobile-links .mobile-menu ul {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 20px;
+    color: white;
+    font-size: 14px;
+  }
+  .mobile-links .mobile-menu ul li {
+    margin-bottom: 20px;
+  }
+  .mobile-links .mobile-menu ul li:first-child {
+    margin-top: 20px;
+  }
+  .mobile-links .mobile-menu ul li a {
+    text-decoration: none;
+    color: white;
+  }
 }
-.top ul li {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  line-height: 35px;
-  text-transform: uppercase;
-  font-size: 62.5%;
-  text-align: center;
-}
-.top ul li a {
-  text-decoration: none;
-  color: #444;
-}
-.top ul li a i {
-  font-size: 1.4em;
-  opacity: 0.3;
-}
-.top ul li a i:hover,
-.top ul li a i:focus,
-.top ul li a i:active {
-  font-size: 1.6em;
-  opacity: 1;
-  color: #41b7d8;
-}
-.top ul li.resumeButton {
-  margin-right: 30px;
+@media screen and (min-width: 737px) {
+  .mobile-links {
+    display: none;
+  }
+  .desktop-links {
+    display: block;
+  }
+  .top .desktop-links {
+    float: right;
+    padding-top: 10px;
+  }
+  .top .desktop-links li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    text-transform: uppercase;
+    font-size: 62.5%;
+    text-align: center;
+  }
+  .top .desktop-links li a {
+    text-decoration: none;
+    color: #444;
+  }
+  .top .desktop-links li a i {
+    font-size: 1.4em;
+    opacity: 0.3;
+  }
+  .top .desktop-links li a i:hover,
+  .top .desktop-links li a i:focus,
+  .top .desktop-links li a i:active {
+    font-size: 1.6em;
+    opacity: 1;
+    color: #41b7d8;
+  }
+  .top .desktop-links li.resumeButton {
+    margin-right: 30px;
+  }
 }
 .container {
   /*min-width:430px;*/

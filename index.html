@@ -16,7 +16,30 @@
 	<body ng-controller="main">
 		<header>
 			<div class="top">
-				<ul>
+                <div class="mobile-links">
+                    <div class="hamburger" id="hamburger" ng-click="toggleHamburger(this)">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="mobile-menu">
+                        <ul>
+                            <li>
+                                <a href="http://www.linkedin.com/in/johnmarksjr" target="_blank">LinkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/jettagozoom" target="_blank">GitHub</a>
+                            </li>
+                            <li>
+                                <a href="mailto:johnmarksjr@gmail.com" target="_blank">Hire me</a>
+                            </li>
+                            <li>
+                                <a href="images/resume.pdf" target="_blank">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="desktop-links">
 					<li class="linkedinButton" tooltip title="Link to me" placement="left" delay="500">
 						<a href="http://www.linkedin.com/in/johnmarksjr" target="_blank">
                             <i class="fa fa-linkedin"></i></a></li>
