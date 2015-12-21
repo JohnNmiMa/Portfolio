@@ -13,11 +13,11 @@
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<!-- endbuild -->
 	</head>
-	<body ng-controller="main" ng-click="closeMobileMenu($event)">
+    <body ng-controller="main">
 		<header>
 			<div class="top">
                 <div class="mobile-links">
-                    <div class="hamburger" id="hamburger" ng-click="toggleHamburger($event)">
+                    <div class="hamburger" id="hamburger" ng-click="toggleHamburger(this, $event)">
                         <span></span>
                         <span></span>
                         <span></span>
