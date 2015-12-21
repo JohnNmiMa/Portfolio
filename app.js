@@ -57,10 +57,15 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         }
     };
 
-    $scope.toggleHamburger = function(ele) {
+    $scope.toggleHamburger = function($event) {
         var mobileLinks = document.getElementsByClassName('mobile-links')[0];
         mobileLinks.classList.toggle('expand');
+        $event.stopPropagation();
         console.log("Hi there");
+    };
+    $scope.closeMobileMenu = function($event) {
+        var mobileLinks = document.getElementsByClassName('mobile-links')[0];
+        mobileLinks.classList.remove('expand');
     };
 
     function init() {
