@@ -39,7 +39,7 @@ header {
     padding: 5px 0px 0px 3px;
   }
   .mobile-links.expand .hamburger {
-    background: #2f3642;
+    background: rgba(47, 54, 66, 0.2);
   }
   .mobile-links .hamburger span {
     display: block;
@@ -64,7 +64,7 @@ header {
     top: 100%;
     right: 0;
     width: 50%;
-    background-color: #2F3642;
+    background-color: #444;
   }
   .mobile-links.expand .mobile-menu {
     display: block !important;
