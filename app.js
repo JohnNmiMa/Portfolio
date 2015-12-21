@@ -60,6 +60,7 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
     $scope.toggleHamburger = function(ele) {
         var mobileLinks = document.getElementsByClassName('mobile-links')[0];
         mobileLinks.classList.toggle('expand');
+        console.log("Hi there");
     };
 
     function init() {
