@@ -35,10 +35,12 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
     var mobileDeviceUAStr = "",
         mobileDeviceMQStr = "",
         isMobileDeviceUA = false,
-        isMobileDeviceMQ = false,
-        mqOrientation = window.matchMedia( "(orientation: portrait)" ),
-        mqOrientationStr = mqOrientation.matches ? "Portrait" : "Landscape",
-        mq = window.matchMedia("screen and (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 1.1) and (-webkit-max-device-pixel-ratio: 4)");
+        isMobileDeviceMQ = false;
+        mqOrientation = window.matchMedia ? window.matchMedia( "(orientation: portrait)" ) : null,
+        mqOrientationStr = mqOrientation && mqOrientation.matches ? "Portrait" : "Landscape",
+        mq = window.matchMedia ?
+             window.matchMedia("screen and (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 1.1) and (-webkit-max-device-pixel-ratio: 4)") :
+             null;
 
     $scope.showSummaries = false;
     $scope.isMobileDeviceUA = "";
@@ -64,15 +66,19 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
     };
 
     function init() {
-        mqOrientation.addListener(isMobileUsingMediaQuery);
-        $scope.isMobileDeviceMQ = isMobileUsingMediaQuery(mqOrientation);
-        $scope.isMobileDeviceUA = isMobileUsingUserAgent();
+        if (mqOrientation) {
+            mqOrientation.addListener(isMobileUsingMediaQuery);
+            $scope.isMobileDeviceMQ = isMobileUsingMediaQuery(mqOrientation);
+            $scope.isMobileDeviceUA = isMobileUsingUserAgent();
+        }
     }
 
     function isMobileUsingMediaQuery(mqO) {
         var dimensions = computeDimensionsStr(),
             mqOrientationStr = mqO.matches ? "Portrait" : "Landscape",
-            mq = window.matchMedia("screen and (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 1.1) and (-webkit-max-device-pixel-ratio: 4)");
+            mq = window.matchMedia ?
+                 window.matchMedia("screen and (max-device-width:480px) and (-webkit-min-device-pixel-ratio: 1.1) and (-webkit-max-device-pixel-ratio: 4)") :
+                 null;
 
         dimensions += "; Orientation=" + mqOrientationStr;
         setTimeout(function() {
@@ -80,7 +86,7 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
                 $scope.mobileDeviceMQStr = dimensions;
             })
         }, 1000);
-        return mq.matches;
+        return mq ? mq.matches : false;
     }
 
     function computeDimensionsStr() {
