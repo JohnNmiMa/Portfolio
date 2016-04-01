@@ -25,7 +25,7 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         //.when("/careers", {
         //    template : "<div</div>",
         //    controller : function() {
-        //        window.location.replace("http://192.168.56.101/career/CareerHome.action?clientId=8a80838f4f51d8b0014f525b120e000b");
+        //        window.location.replace("http://192.168.56.101/career/CareerHome.action?clientId=8a80838f531e1aef01531e1d72400009");
         //    }
         //})
         .otherwise({redirectTo: '/'});
