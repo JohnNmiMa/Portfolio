@@ -1,41 +1,42 @@
 var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize', 'ngTouch', 'ngAnimate'])
 
-.config(['$routeProvider', function ($routeProvider) {
+.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.when("/work", {
-        templateUrl: "./views/work/work.html",
+        templateUrl: 'views/work/work.html',
         controller: 'WorkCtrl'
     })
-        .when("/", {
-            redirectTo: "/work"
-        })
-        .when("/experience", {
-            templateUrl: "./views/experience/experience.html",
-            controller: 'ExperienceCtrl'
-        })
-        .when("/skills", {
-            templateUrl: "./views/skills/skills.html",
-            controller: 'SkillsCtrl'
-        })
-        // Use for Newton single-line iframe careers pages
-        .when("/careers", {
-            templateUrl: "./views/careers/careers.html",
-            controller: 'CareersCtrl'
-        })
-        // Use for Newton hosted careers pages
-        //.when("/careers", {
-        //    template : "<div</div>",
-        //    controller : function() {
-        //        window.location.replace("http://192.168.56.101/career/CareerHome.action?clientId=8a80838f531e1aef01531e1d72400009");
-        //    }
-        //})
-        .otherwise({redirectTo: '/'});
+    .when('/experience', {
+        templateUrl: 'views/experience/experience.html',
+        controller: 'ExperienceCtrl'
+    })
+    .when('/skills', {
+        templateUrl: 'views/skills/skills.html',
+        controller: 'SkillsCtrl'
+    })
+    // Use for Newton single-line iframe careers pages
+    .when('/careers', {
+        templateUrl: 'views/careers/careers.html',
+        controller: 'CareersCtrl'
+    })
+    .when('/', {
+        redirectTo: '/work'
+    })
+    // Use for Newton hosted careers pages
+    //.when("/careers", {
+    //    template : "<div</div>",
+    //    controller : function() {
+    //        window.location.replace("http://192.168.56.101/career/CareerHome.action?clientId=8a80838f531e1aef01531e1d72400009");
+    //    }
+    //})
+    .otherwise({redirectTo: '/'});
+    $locationProvider.html5Mode({enabled: true, rewriteLinks: true});
 }])
 
 .controller('main', ['$rootScope', '$scope', function ($rootScope, $scope) {
     var mobileDeviceUAStr = "",
         mobileDeviceMQStr = "",
         isMobileDeviceUA = false,
-        isMobileDeviceMQ = false;
+        isMobileDeviceMQ = false,
         mqOrientation = window.matchMedia ? window.matchMedia( "(orientation: portrait)" ) : null,
         mqOrientationStr = mqOrientation && mqOrientation.matches ? "Portrait" : "Landscape",
         mq = window.matchMedia ?
