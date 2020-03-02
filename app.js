@@ -18,16 +18,17 @@ var portfolioApp = angular.module('JohnMarksPortfolio', ['ngRoute', 'ngSanitize'
         templateUrl: 'views/careers/careers.html',
         controller: 'CareersCtrl'
     })
+    // Use for Newton hosted careers pages
+    //     .when("/careers", {
+    //         template : "<div style='margin:50px auto;'></div>",
+    //         controller: function() {
+    //             console.log("Going to the hosted careers site");
+    //             window.location.replace("http://localhost/career/CareerHome.action?clientId=8acf16914d0868db014d20f61d18582f");
+    //         }
+    //     })
     .when('/', {
         redirectTo: '/work'
     })
-    // Use for Newton hosted careers pages
-    //.when("/careers", {
-    //    template : "<div</div>",
-    //    controller : function() {
-    //        window.location.replace("http://192.168.56.101/career/CareerHome.action?clientId=8a80838f531e1aef01531e1d72400009");
-    //    }
-    //})
     .otherwise({redirectTo: '/'});
     $locationProvider.html5Mode({enabled: true, rewriteLinks: true});
 }])
